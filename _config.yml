@@ -1,0 +1,12 @@
+# Site settings
+title: Data Science: A Practical and Philosophical Introduction
+description: An introduction to theory and practice of data science, using Python, SQL, and R
+
+# Build settings
+remote_theme: pages-themes/leap-day@v0.2.0
+show_downloads: true
+
+# Optional settings
+author: Brendan P. Shea, PhD
+email: brendanpshea@gmail.com
+github_username:  brendanpshea
