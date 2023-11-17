@@ -1,7 +1,7 @@
 # Data Science: A Practical and Philosophical Introduction
 ### Brendan Shea, PHD
 
-This virtual textbook (delivered as a series of Jupyer notebooks) provides an introduction to basic concepts of concepts and tools of data science. We look both at the *technical* aspects (using Python, R, and SQL), and the more scientific/philosophical issues regarding methodology, interpretation and communication of results, and ethics.
+This virtual textbook (delivered as a series of Jupyer notebooks) provides an introduction to basic concepts and tools of data science. We look both at the technical aspects (using Python, R, and SQL) of data science, and more scientific/philosophical issues regarding methodology, interpretation and communication of results, and ethics.
 
 ## [Chapter 1: Introduction to Data Science](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/Data_Science_01_Introduction.ipynb)
 
