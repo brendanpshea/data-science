@@ -191,8 +191,8 @@ Each of these options allows for detailed customization of Matplotlib graphics, 
 **Hypothesis Testing**
 Hypothesis Testing is a statistical method used to make inferences about population parameters based on sample data. The process typically involves two competing hypotheses: the null hypothesis (\(H_0\)) and the alternative hypothesis (\(H_a\)). The null hypothesis represents a default position that there is no relationship, effect, or difference between groups or variables. Conversely, the alternative hypothesis suggests that there is a significant relationship, effect, or difference.
 
-- The **Null Hypothesis (\(H_0\))** posits that there is no effect or difference. For instance, \(H_0\): "The mean difference between two groups is zero."
-- The **Alternative Hypothesis (\(H_a\))** indicates the presence of an effect or difference. For example, \(H_a\): "The mean difference between two groups is not zero."
+- The **Null Hypothesis $(\(H_0\))$** posits that there is no effect or difference. For instance, \(H_0\): "The mean difference between two groups is zero."
+- The **Alternative Hypothesis $(\(H_a\)$** indicates the presence of an effect or difference. For example, \(H_a\): "The mean difference between two groups is not zero."
 
 The outcome of hypothesis testing is determined based on the analysis of sample data, often resulting in either rejecting the null hypothesis or failing to reject it.
 
@@ -215,7 +215,7 @@ The P-value is a key metric in hypothesis testing, representing the probability 
 A Confidence Interval (CI) provides a range of plausible values for an unknown population parameter (like a mean or difference between two means). It's based on the observed data and a desired confidence level (usually 95%). Key aspects include:
 
 - **95% Confidence Interval**: Implies that if the same population is sampled 100 times, approximately 95 of those samples will produce confidence intervals that contain the true population parameter.
-- The confidence interval is calculated as \( \text{estimated parameter} \pm (\text{critical value} \times \text{standard error}) \).
+- The confidence interval is calculated as $\( \text{estimated parameter} \pm (\text{critical value} \times \text{standard error}) \)$.
 - A wider interval reflects more uncertainty about the parameter's value, while a narrower interval provides more precision.
 
 These concepts collectively form the foundation of inferential statistics, allowing researchers to make data-driven conclusions about populations based on sampled data.
