@@ -142,8 +142,8 @@ plt.ylabel("Y-axis Label")       # Label for the y-axis
 # Display the plot
 plt.show()
 ```
-Options for Formatting Matplotlib Graphics
-------------------------------------------
+### Options for Formatting Matplotlib Graphics
+
 
 ### 1\. Changing Line Styles and Colors
 
@@ -188,13 +188,40 @@ Options for Formatting Matplotlib Graphics
 Each of these options allows for detailed customization of Matplotlib graphics, enhancing the effectiveness and impact of data visualization. The choice of formatting options depends on the specific needs of the data presentation and the intended audience.
 
 ## Basic Concepts of Inferential Statistics
-**Hypothesis Testing** is a method used to determine whether there is enough evidence in a sample of data to infer that a certain condition holds true for the entire population. It typically involves formulating a null hypothesis (no effect or no difference) and an alternative hypothesis (some effect or difference).
+**Hypothesis Testing**
+Hypothesis Testing is a statistical method used to make inferences about population parameters based on sample data. The process typically involves two competing hypotheses: the null hypothesis (\(H_0\)) and the alternative hypothesis (\(H_a\)). The null hypothesis represents a default position that there is no relationship, effect, or difference between groups or variables. Conversely, the alternative hypothesis suggests that there is a significant relationship, effect, or difference.
 
- The **T-test** is a type of inferential statistic used to determine if there is a significant difference between the means of two groups, which may be related in certain features. It's especially useful when dealing with small sample sizes or unknown population variances.
+- The **Null Hypothesis (\(H_0\))** posits that there is no effect or difference. For instance, \(H_0\): "The mean difference between two groups is zero."
+- The **Alternative Hypothesis (\(H_a\))** indicates the presence of an effect or difference. For example, \(H_a\): "The mean difference between two groups is not zero."
 
-The **P-value** in hypothesis testing measures the probability of obtaining test results at least as extreme as the ones observed during the test, assuming that the null hypothesis is true. A low p-value (typically ≤ 0.05) indicates that the null hypothesis can be rejected.
+The outcome of hypothesis testing is determined based on the analysis of sample data, often resulting in either rejecting the null hypothesis or failing to reject it.
 
-A **Confidence Interval** is a range of values, derived from the sample statistics, that is likely to contain the value of an unknown population parameter. For example, a 95% confidence interval suggests that if the same population is sampled multiple times, approximately 95% of the intervals will contain the population parameter.
+**T-test**
+The T-test is a statistical test used to compare the means of two groups. It is particularly useful when dealing with small sample sizes or when the population variance is unknown. There are several types of T-tests:
+
+- The **Independent Samples T-test** is used when comparing the means of two separate groups (e.g., men vs. women).
+- The **Paired Samples T-test** is employed when comparing means from the same group at different times (before and after a treatment).
+- The **One Sample T-test** is used when comparing the mean of a single group against a known standard or mean.
+
+The T-test calculates the T-statistic, a ratio of the departure of the estimated value of a parameter from its hypothesized value to its standard error.
+
+**P-value**
+The P-value is a key metric in hypothesis testing, representing the probability of observing a statistic (or one more extreme) assuming that the null hypothesis is true. It quantifies the strength of evidence against the null hypothesis. Key points include:
+
+- A lower P-value suggests that the observed data is unlikely under the null hypothesis.
+- Common threshold: P-value ≤ 0.05. If the P-value is below this threshold, it is often considered **statistically significant**, leading to the rejection of the null hypothesis.
+
+**Confidence Interval**
+A Confidence Interval (CI) provides a range of plausible values for an unknown population parameter (like a mean or difference between two means). It's based on the observed data and a desired confidence level (usually 95%). Key aspects include:
+
+- **95% Confidence Interval**: Implies that if the same population is sampled 100 times, approximately 95 of those samples will produce confidence intervals that contain the true population parameter.
+- The confidence interval is calculated as \( \text{estimated parameter} \pm (\text{critical value} \times \text{standard error}) \).
+- A wider interval reflects more uncertainty about the parameter's value, while a narrower interval provides more precision.
+
+These concepts collectively form the foundation of inferential statistics, allowing researchers to make data-driven conclusions about populations based on sampled data.
+
+
+
 
 ### Python Examples
 ```python
@@ -503,72 +530,73 @@ This R code snippet also conducts a linear regression analysis on the same Poké
 | Linear Regression | A statistical method for modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. |
 | Beta-coefficients | Parameters in a linear regression model that represent the change in the dependent variable for each one-unit change in an independent variable. |
 | Intercept | The value of the dependent variable when all independent variables in a linear regression model are equal to zero. |
+| R-squared | This statistic measures the proportion of variance in the dependent variable that the independent variables can explain. A higher R-squared value indicates a better fit of the model to the data.|
 
 ### Code to Know: Pandas
 | Pandas Code  | Description |
 | --- | --- |
-| `df = pd.read_csv('file.csv')` | Load a CSV file into a Pandas DataFrame. |
-| `df.head()` | View the first five rows of the DataFrame. |
-| `df.tail()` | View the last five rows of the DataFrame. |
-| `df.shape` | Get the number of rows and columns in the DataFrame. |
-| `df.columns` | List all column names in the DataFrame. |
-| `df.describe()` | Generate descriptive statistics for numerical columns. |
-| `df['column'].mean()` | Calculate the mean of a specific column. |
-| `df['column'].median()` | Calculate the median of a specific column. |
-| `df.groupby('column').sum()` | Summarize data by grouping on a specific column and calculating sum. |
-| `df.isnull().sum()` | Count missing values in each column of the DataFrame. |
-| `df.dropna()` | Drop all rows with missing values. |
-| `df.fillna(value)` | Replace all missing values in the DataFrame with a specified value. |
-| `df['new_column'] = df['column1'] + df['column2']` | Create a new column as a sum of two other columns. |
-| `df.plot(kind='line')` | Create a line plot of the DataFrame. |
-| `df['column'].plot(kind='hist')` | Create a histogram of a specific column. |
-| `df[['column1', 'column2']].plot(kind='box')` | Create a box plot for multiple specified columns. |
-| `df.plot(x='column1', y='column2', kind='scatter')` | Create a scatter plot using two specific columns. |
-| `df[df['column'] > value]` | Filter rows where the value in a specific column is greater than a certain value. |
-| `df[(df['column1'] > value1) & (df['column2'] < value2)]` | Filter rows based on multiple conditions in different columns. |
-| `df.loc[df['column'] == 'value', 'other_column']` | Select values from a specific column based on a condition in another column. |
-| `df.iloc[0:5, 0:2]` | Select the first five rows and first two columns using integer index location. |
-| `df.sort_values(by='column')` | Sort the DataFrame based on the values in a specific column in ascending order. |
-| `df.sort_values(by='column', ascending=False)` | Sort the DataFrame based on the values in a specific column in descending order. |
-| `df['column1'][df['column2'] == value]` | Select values from one column based on a condition in another column. |
-| `df[['column1', 'column2']]` | Select multiple specific columns from the DataFrame. |
+| `df = pd.read_csv('file.csv')` | Pandas: Load a CSV file into a Pandas DataFrame. |
+| `df.head()` | Pandas: View the first five rows of the DataFrame. |
+| `df.tail()` | Pandas: View the last five rows of the DataFrame. |
+| `df.shape` | Pandas: Get the number of rows and columns in the DataFrame. |
+| `df.columns` | Pandas: List all column names in the DataFrame. |
+| `df.describe()` | Pandas: Generate descriptive statistics for numerical columns. |
+| `df['column'].mean()` | Pandas: Calculate the mean of a specific column. |
+| `df['column'].median()` | Pandas: Calculate the median of a specific column. |
+| `df.groupby('column').sum()` |Pandas:  Summarize data by grouping on a specific column and calculating sum. |
+| `df.isnull().sum()` | Pandas: Count missing values in each column of the DataFrame. |
+| `df.dropna()` |Pandas:  Drop all rows with missing values. |
+| `df.fillna(value)` | Pandas: Replace all missing values in the DataFrame with a specified value. |
+| `df['new_column'] = df['column1'] + df['column2']` | Pandas: Create a new column as a sum of two other columns. |
+| `df.plot(kind='line')` | Pandas: Create a line plot of the DataFrame. |
+| `df['column'].plot(kind='hist')` |Pandas:  Create a histogram of a specific column. |
+| `df[['column1', 'column2']].plot(kind='box')` |Pandas:  Create a box plot for multiple specified columns. |
+| `df.plot(x='column1', y='column2', kind='scatter')` |Pandas:  Create a scatter plot using two specific columns. |
+| `df[df['column'] > value]` | Pandas: Filter rows where the value in a specific column is greater than a certain value. |
+| `df[(df['column1'] > value1) & (df['column2'] < value2)]` |Pandas:  Filter rows based on multiple conditions in different columns. |
+| `df.loc[df['column'] == 'value', 'other_column']` |Pandas:  Select values from a specific column based on a condition in another column. |
+| `df.iloc[0:5, 0:2]` | Pandas: Select the first five rows and first two columns using integer index location. |
+| `df.sort_values(by='column')` |Pandas:  Sort the DataFrame based on the values in a specific column in ascending order. |
+| `df.sort_values(by='column', ascending=False)` | Pandas: Sort the DataFrame based on the values in a specific column in descending order. |
+| `df['column1'][df['column2'] == value]` | Pandas: Select values from one column based on a condition in another column. |
+| `df[['column1', 'column2']]` |Pandas:  Select multiple specific columns from the DataFrame. |
 
 ### R Code to Know
 | R Code | Description |
 | --- | --- |
-| `df <- read.csv('file.csv')` | Load a CSV file into a DataFrame (`df`). |
-| `head(df)` | View the first six rows of the DataFrame. |
-| `tail(df)` | View the last six rows of the DataFrame. |
-| `dim(df)` | Get the dimensions of the DataFrame (rows and columns). |
-| `colnames(df)` | Retrieve the column names of the DataFrame. |
-| `summary(df)` | Generate summary statistics for the DataFrame. |
-| `mean(df$column)` | Calculate the mean of a specific column. |
-| `median(df$column)` | Calculate the median of a specific column. |
-| `df$column <- df$column1 + df$column2` | Create a new column as a sum of two other columns. |
-| `plot(df$column1, df$column2)` | Create a scatter plot using two columns from the DataFrame. |
-| `hist(df$column)` | Create a histogram of a specific column. |
-| `boxplot(df$column)` | Create a box plot of a specific column. |
-| `df[order(df$column),]` | Sort the DataFrame based on a specific column. |
-| `lm(column1 ~ column2 + column3, data = df)` | Fit a linear regression model with multiple predictors. |
+| `df <- read.csv('file.csv')` | R: Load a CSV file into a DataFrame (`df`). |
+| `head(df)` | R:View the first six rows of the DataFrame. |
+| `tail(df)` | R:View the last six rows of the DataFrame. |
+| `dim(df)` | R:Get the dimensions of the DataFrame (rows and columns). |
+| `colnames(df)` | R: Retrieve the column names of the DataFrame. |
+| `summary(df)` | R: Generate summary statistics for the DataFrame. |
+| `mean(df$column)` | R: Calculate the mean of a specific column. |
+| `median(df$column)` | R: Calculate the median of a specific column. |
+| `df$column <- df$column1 + df$column2` | R: Create a new column as a sum of two other columns. |
+| `plot(df$column1, df$column2)` | R: Create a scatter plot using two columns from the DataFrame. |
+| `hist(df$column)` | R: Create a histogram of a specific column. |
+| `boxplot(df$column)` | R: Create a box plot of a specific column. |
+| `df[order(df$column),]` | R: Sort the DataFrame based on a specific column. |
+| `lm(column1 ~ column2 + column3, data = df)` | R: Fit a linear regression model with multiple predictors. |
 
 ### SQL Code to Know
-| SQL Code Snippet | Description |
+| SQL Code | Description |
 | --- | --- |
-| `SELECT * FROM table_name;` | Select all columns from a specified table. |
-| `SELECT column1, column2 FROM table_name;` | Select specific columns from a specified table. |
-| `SELECT DISTINCT column FROM table_name;` | Select unique values from a specific column in a table. |
-| `SELECT * FROM table_name WHERE condition;` | Select rows from a table that meet a specific condition. |
-| `SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;` | Join two tables based on a common column. |
-| `SELECT column1, COUNT(column2) FROM table_name GROUP BY column1;` | Group rows by one column and count the number of occurrences in another column. |
-| `SELECT * FROM table_name ORDER BY column ASC;` | Select all columns from a table and sort them by a specific column in ascending order. |
-| `SELECT * FROM table_name ORDER BY column DESC;` | Select all columns from a table and sort them by a specific column in descending order. |
-| `SELECT column, SUM(another_column) FROM table_name GROUP BY column;` | Sum values in one column, grouped by another column. |
-| `SELECT column1, AVG(column2) FROM table_name GROUP BY column1;` | Calculate the average of one column, grouped by another column. |
-| `CREATE TABLE new_table (column1 TYPE, column2 TYPE);` | Create a new table with specified columns and data types. |
-| `INSERT INTO table_name (column1, column2) VALUES (value1, value2);` | Insert a new row into a table with values for specified columns. |
-| `SELECT column1, column2 FROM table_name LIMIT number;` | Select a specified number of rows from a table. |
-| `SELECT * FROM table_name WHERE column LIKE 'pattern';` | Select rows from a table where a column matches a specified pattern. |
-| `SELECT column1, MIN(column2) FROM table_name GROUP BY column1;` | Select the minimum value of one column, grouped by another column. |
-| `SELECT column1, MAX(column2) FROM table_name GROUP BY column1;` | Select the maximum value of one column, grouped by another column. |
-| `SELECT COUNT(*) FROM table_name;` | Count the total number of rows in a table. |
-| `SELECT column1, column2 FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column;` | Perform an inner join between two tables based on a common column. |
+| `SELECT * FROM table_name;` | SQL: Select all columns from a specified table. |
+| `SELECT column1, column2 FROM table_name;` | SQL: Select specific columns from a specified table. |
+| `SELECT DISTINCT column FROM table_name;` | SQL: Select unique values from a specific column in a table. |
+| `SELECT * FROM table_name WHERE condition;` | SQL: Select rows from a table that meet a specific condition. |
+| `SELECT * FROM table1 JOIN table2 ON table1.column = table2.column;` | SQL: Join two tables based on a common column. |
+| `SELECT column1, COUNT(column2) FROM table_name GROUP BY column1;` | SQL: Group rows by one column and count the number of occurrences in another column. |
+| `SELECT * FROM table_name ORDER BY column ASC;` | SQL: Select all columns from a table and sort them by a specific column in ascending order. |
+| `SELECT * FROM table_name ORDER BY column DESC;` | SQL: Select all columns from a table and sort them by a specific column in descending order. |
+| `SELECT column, SUM(another_column) FROM table_name GROUP BY column;` | SQL: Sum values in one column, grouped by another column. |
+| `SELECT column1, AVG(column2) FROM table_name GROUP BY column1;` | SQL: Calculate the average of one column, grouped by another column. |
+| `CREATE TABLE new_table (column1 TYPE, column2 TYPE);` | SQL: Create a new table with specified columns and data types. |
+| `INSERT INTO table_name (column1, column2) VALUES (value1, value2);` |SQL:  Insert a new row into a table with values for specified columns. |
+| `SELECT column1, column2 FROM table_name LIMIT number;` | SQL: Select a specified number of rows from a table. |
+| `SELECT * FROM table_name WHERE column LIKE 'pattern';` | SQL: Select rows from a table where a column matches a specified pattern. |
+| `SELECT column1, MIN(column2) FROM table_name GROUP BY column1;` | SQL: Select the minimum value of one column, grouped by another column. |
+| `SELECT column1, MAX(column2) FROM table_name GROUP BY column1;` | SQL: Select the maximum value of one column, grouped by another column. |
+| `SELECT COUNT(*) FROM table_name;` | SQL: Count the total number of rows in a table. |
+| `SELECT column1, column2 FROM table1 INNER JOIN table2 ON table1.common_column = table2.common_column;` | SQL:  Perform an inner join between two tables based on a common column. |
