@@ -531,6 +531,8 @@ This R code snippet also conducts a linear regression analysis on the same Poké
 | Beta-coefficients | Parameters in a linear regression model that represent the change in the dependent variable for each one-unit change in an independent variable. |
 | Intercept | The value of the dependent variable when all independent variables in a linear regression model are equal to zero. |
 | R-squared | This statistic measures the proportion of variance in the dependent variable that the independent variables can explain. A higher R-squared value indicates a better fit of the model to the data.|
+| Null Hypothesis  | A hypothesis positing no effect, relationship, or difference between groups or variables, serving as a default position in hypothesis testing. |
+| Alternative Hypothesis | A hypothesis suggesting the presence of an effect, relationship, or difference, contrasting with the null hypothesis. |
 
 ### Code to Know: Pandas
 | Pandas Code  | Description |
