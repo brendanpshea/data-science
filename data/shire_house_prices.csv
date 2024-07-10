@@ -1,0 +1,1001 @@
+SquareFootage,Age,Neighborhood,GardenSize,DistanceToPub,Price
+688,37,Michel Delving,459,1.4,2976
+511,47,Tuckborough,409,1.2,2223
+934,28,Hobbiton,514,1.3,3550
+354,25,Buckland,453,1.1,1793
+1174,23,Buckland,579,1.6,5103
+824,26,Hobbiton,433,1.8,3046
+1088,29,Hobbiton,274,1.5,3860
+1072,11,Buckland,358,1.4,3813
+641,23,Tuckborough,447,0.8,3071
+879,15,Buckland,495,1.1,3430
+479,34,Hobbiton,438,1.2,2423
+797,19,Michel Delving,325,1.2,2902
+920,43,Bywater,432,0.8,3374
+649,24,Michel Delving,609,0.7,2912
+794,20,Michel Delving,601,0.9,3500
+623,41,Hobbiton,555,1.1,2855
+682,34,Buckland,568,1.0,2986
+922,36,Tuckborough,673,0.4,4466
+622,37,Michel Delving,561,0.4,3062
+501,30,Buckland,751,0.2,3013
+884,35,Tuckborough,577,1.7,3899
+927,12,Michel Delving,481,1.3,3776
+512,46,Tuckborough,554,0.6,2909
+675,29,Buckland,430,0.7,2736
+1091,3,Bywater,531,0.9,4278
+709,31,Buckland,538,1.0,3154
+521,29,Hobbiton,583,0.5,2208
+572,50,Tuckborough,457,0.8,2878
+625,35,Bywater,549,0.8,3117
+461,30,Tuckborough,306,0.0,2091
+929,11,Tuckborough,577,0.6,3996
+515,54,Michel Delving,524,1.4,2377
+848,38,Hobbiton,552,1.1,3691
+595,52,Tuckborough,570,1.1,3069
+1185,25,Buckland,440,1.0,4355
+345,43,Buckland,318,1.8,2025
+775,33,Michel Delving,487,0.9,3603
+821,7,Hobbiton,443,1.5,3192
+741,30,Hobbiton,529,1.6,3482
+689,33,Buckland,473,1.4,2763
+692,36,Bywater,576,1.0,3033
+638,24,Michel Delving,572,0.1,2795
+407,47,Michel Delving,433,0.6,2221
+934,29,Buckland,351,1.0,3551
+815,30,Buckland,475,0.7,3312
+941,19,Bywater,527,1.2,4210
+754,30,Bywater,458,1.6,3162
+519,24,Hobbiton,619,1.3,2916
+918,39,Michel Delving,532,1.7,3870
+815,50,Michel Delving,627,0.3,3525
+990,23,Buckland,360,1.4,3478
+676,37,Hobbiton,548,0.2,3330
+888,25,Michel Delving,576,1.3,3811
+1031,57,Hobbiton,564,2.3,4841
+950,50,Hobbiton,666,0.2,4421
+883,42,Buckland,364,1.2,3360
+1036,11,Hobbiton,459,1.1,4098
+924,25,Bywater,472,0.9,3652
+743,11,Bywater,406,0.8,3232
+823,27,Tuckborough,590,0.8,3552
+403,0,Buckland,486,1.2,2289
+894,10,Tuckborough,534,0.7,4025
+799,38,Bywater,374,0.7,3353
+877,5,Tuckborough,605,0.7,4024
+887,35,Buckland,608,0.2,3817
+719,22,Buckland,625,1.3,3215
+950,17,Hobbiton,573,1.9,4142
+613,36,Michel Delving,311,0.3,2254
+770,10,Hobbiton,589,0.7,3495
+989,29,Buckland,398,1.0,4033
+991,19,Bywater,398,0.6,3736
+831,0,Bywater,508,0.8,3194
+688,57,Hobbiton,270,1.2,2730
+700,32,Buckland,679,1.3,3465
+688,19,Bywater,673,0.1,3366
+948,13,Buckland,397,1.3,3869
+833,19,Bywater,445,1.4,3245
+1164,26,Buckland,585,1.4,5052
+787,45,Tuckborough,545,0.6,3335
+762,40,Buckland,474,1.1,3255
+867,24,Buckland,509,0.6,3565
+1127,32,Hobbiton,550,1.2,5141
+539,55,Tuckborough,546,0.0,3086
+713,18,Michel Delving,413,1.7,2527
+872,1,Hobbiton,533,1.4,3710
+967,44,Michel Delving,478,1.5,4224
+962,21,Bywater,443,2.0,3883
+769,29,Michel Delving,420,0.8,2932
+706,25,Buckland,461,0.9,3098
+754,26,Michel Delving,579,0.3,3126
+243,36,Hobbiton,448,0.3,1378
+620,22,Hobbiton,382,0.3,2404
+879,37,Michel Delving,608,1.4,3950
+1087,12,Hobbiton,576,1.6,4602
+960,32,Hobbiton,623,1.7,4219
+515,49,Michel Delving,393,0.0,2737
+547,40,Tuckborough,432,0.9,2422
+700,28,Tuckborough,399,1.4,2954
+1055,23,Bywater,512,2.0,4636
+622,53,Hobbiton,505,0.6,2720
+631,76,Michel Delving,512,0.7,2840
+657,33,Hobbiton,490,1.1,3084
+526,47,Buckland,683,0.6,2842
+691,41,Hobbiton,376,0.7,2717
+664,19,Hobbiton,394,0.8,2564
+775,36,Tuckborough,461,0.8,3150
+728,42,Michel Delving,484,1.5,2750
+645,32,Hobbiton,621,0.6,2973
+621,44,Tuckborough,435,0.8,2897
+1129,24,Bywater,513,2.1,5230
+722,6,Tuckborough,587,1.2,3359
+867,23,Tuckborough,569,1.7,3663
+910,20,Tuckborough,469,0.8,3642
+1018,4,Hobbiton,461,1.8,4020
+467,46,Hobbiton,391,0.6,2194
+540,45,Bywater,501,0.4,2656
+334,49,Buckland,521,0.3,2211
+676,29,Buckland,603,1.8,3460
+645,35,Buckland,484,0.6,2922
+842,40,Bywater,338,1.1,3087
+800,29,Buckland,385,0.7,3342
+749,23,Buckland,580,2.3,3456
+729,29,Tuckborough,526,0.7,3130
+838,34,Hobbiton,366,0.8,2826
+671,35,Hobbiton,417,1.8,2903
+511,71,Tuckborough,316,0.7,2461
+604,8,Tuckborough,427,0.8,2654
+675,23,Tuckborough,500,2.2,2676
+909,29,Hobbiton,414,0.9,3313
+544,29,Buckland,602,1.2,2886
+733,21,Tuckborough,494,1.5,2885
+928,9,Bywater,470,1.2,3519
+1062,41,Tuckborough,406,0.9,3953
+1279,18,Michel Delving,395,0.8,4869
+775,1,Tuckborough,733,1.4,3601
+717,32,Hobbiton,381,0.6,2635
+578,23,Tuckborough,416,1.0,2619
+573,43,Michel Delving,494,0.0,2482
+618,39,Bywater,394,0.5,2483
+839,48,Buckland,389,1.0,3183
+884,16,Tuckborough,314,1.3,3028
+526,30,Michel Delving,499,1.3,2713
+944,37,Michel Delving,514,1.9,3723
+757,14,Bywater,577,1.2,3358
+974,36,Hobbiton,535,0.6,3963
+864,42,Tuckborough,462,1.0,3228
+672,47,Michel Delving,451,1.2,2793
+462,24,Bywater,568,0.2,2098
+703,38,Buckland,518,1.3,3179
+898,13,Michel Delving,485,1.0,3457
+741,27,Bywater,378,1.1,2940
+902,22,Hobbiton,372,1.6,3444
+1037,32,Hobbiton,378,1.2,3961
+842,31,Michel Delving,620,1.2,3741
+736,30,Michel Delving,513,1.3,3130
+989,50,Tuckborough,445,1.1,3848
+1312,12,Bywater,492,2.4,5345
+1004,4,Michel Delving,509,2.0,4811
+756,16,Tuckborough,403,1.6,3097
+772,43,Tuckborough,593,1.0,4057
+768,35,Michel Delving,540,1.1,3037
+941,39,Hobbiton,391,1.7,3341
+919,15,Bywater,406,1.8,3291
+814,36,Bywater,729,0.4,3973
+930,48,Hobbiton,550,1.0,3921
+805,49,Michel Delving,564,0.5,3632
+693,36,Bywater,678,0.9,3161
+795,38,Michel Delving,499,1.0,3363
+866,24,Michel Delving,158,1.1,2735
+396,46,Tuckborough,636,0.6,2473
+740,31,Hobbiton,549,0.5,3396
+519,35,Michel Delving,447,1.1,3552
+748,52,Buckland,359,0.7,2776
+927,12,Hobbiton,479,1.4,3392
+709,30,Bywater,415,1.1,3071
+986,30,Tuckborough,539,1.8,4750
+1166,32,Bywater,419,0.6,4567
+1026,12,Bywater,468,2.1,4243
+785,17,Hobbiton,510,0.7,3166
+787,22,Bywater,466,1.6,3246
+876,27,Michel Delving,476,1.0,3360
+896,23,Bywater,468,1.1,3410
+797,18,Tuckborough,282,0.6,2813
+818,2,Tuckborough,529,1.0,3428
+765,23,Buckland,522,1.1,3340
+655,15,Tuckborough,541,0.8,2699
+585,46,Bywater,558,1.0,2972
+1066,25,Tuckborough,456,2.0,4072
+753,54,Hobbiton,427,1.0,2939
+470,31,Tuckborough,563,0.7,2301
+788,28,Michel Delving,486,0.6,3188
+724,5,Hobbiton,486,1.6,3125
+608,53,Buckland,339,1.2,2635
+800,22,Michel Delving,588,0.2,3356
+1085,10,Bywater,574,1.2,4498
+296,32,Bywater,587,0.0,1847
+908,70,Bywater,410,1.3,4012
+631,23,Michel Delving,390,0.2,2935
+912,31,Michel Delving,376,1.3,3589
+915,30,Michel Delving,455,0.2,3584
+920,14,Hobbiton,532,1.4,3706
+822,22,Hobbiton,422,0.8,2983
+929,20,Bywater,522,0.2,3632
+666,43,Tuckborough,614,0.6,3100
+1075,23,Bywater,492,1.1,4053
+812,33,Buckland,383,1.6,2992
+981,54,Hobbiton,495,1.6,4091
+405,45,Michel Delving,434,0.7,2132
+1338,20,Hobbiton,664,1.2,6357
+1217,10,Michel Delving,429,2.2,4917
+977,20,Buckland,636,1.3,4462
+771,29,Buckland,668,0.3,3679
+704,30,Hobbiton,542,0.8,2974
+440,33,Michel Delving,536,1.0,2476
+827,29,Buckland,574,0.6,3458
+935,23,Bywater,496,1.1,3763
+868,46,Bywater,434,0.4,3574
+716,34,Michel Delving,359,0.5,3105
+822,18,Hobbiton,544,0.7,4014
+790,11,Buckland,602,0.6,3413
+975,19,Hobbiton,491,1.6,4593
+873,42,Bywater,519,0.5,3298
+1126,4,Buckland,505,1.3,4982
+455,17,Hobbiton,297,0.5,2080
+874,23,Tuckborough,467,2.4,3387
+790,16,Michel Delving,443,0.3,3249
+617,63,Michel Delving,464,0.4,3034
+530,26,Tuckborough,460,0.2,2230
+742,11,Bywater,517,0.0,3075
+1001,27,Buckland,314,1.6,3697
+580,25,Michel Delving,445,1.0,3070
+541,18,Tuckborough,389,0.9,2394
+716,15,Tuckborough,604,1.5,3327
+1027,39,Bywater,566,1.9,4196
+1078,12,Bywater,451,2.0,4153
+1009,22,Hobbiton,506,0.7,3923
+634,32,Michel Delving,276,0.4,2392
+743,16,Hobbiton,542,1.3,3053
+662,37,Tuckborough,501,1.3,3062
+536,58,Buckland,639,0.2,2939
+763,48,Buckland,547,1.1,3569
+1347,7,Bywater,483,1.7,5317
+995,14,Buckland,532,1.3,4114
+1006,2,Buckland,564,1.1,4298
+1076,30,Buckland,411,2.1,4318
+856,63,Tuckborough,378,1.2,3097
+306,28,Buckland,555,1.4,2195
+1217,8,Buckland,389,2.2,4480
+820,38,Buckland,536,0.9,3439
+930,15,Hobbiton,384,1.8,3730
+813,17,Tuckborough,495,1.9,3508
+876,10,Bywater,580,0.9,4248
+600,49,Hobbiton,570,0.4,2682
+628,43,Michel Delving,427,1.2,2507
+824,36,Tuckborough,351,1.5,3012
+676,31,Tuckborough,432,0.6,2973
+1029,9,Michel Delving,569,0.9,4357
+984,2,Michel Delving,413,1.2,4010
+1019,48,Michel Delving,398,0.5,3811
+661,43,Bywater,447,0.4,2789
+1188,6,Buckland,291,1.0,4383
+907,40,Tuckborough,536,1.0,3642
+791,17,Buckland,518,1.2,3767
+596,54,Buckland,501,1.1,3137
+578,32,Michel Delving,593,0.3,2938
+778,40,Bywater,248,1.5,3120
+836,30,Hobbiton,258,1.0,3028
+941,31,Bywater,464,1.0,3618
+717,50,Buckland,523,1.0,2955
+425,36,Bywater,582,0.7,2305
+988,13,Michel Delving,369,1.1,3311
+989,3,Hobbiton,555,2.0,4023
+705,38,Michel Delving,423,1.9,3128
+1157,24,Hobbiton,466,1.5,4758
+853,45,Buckland,311,1.2,3361
+809,18,Hobbiton,439,1.5,3440
+925,37,Hobbiton,492,1.0,3868
+979,10,Hobbiton,290,1.1,3418
+350,51,Bywater,530,0.3,2284
+776,34,Bywater,350,0.3,2904
+911,8,Buckland,520,0.7,3908
+642,19,Hobbiton,575,0.8,2819
+1110,48,Tuckborough,488,1.8,4625
+732,36,Buckland,535,1.0,3377
+946,25,Hobbiton,481,1.3,3824
+907,27,Hobbiton,535,0.8,3785
+721,15,Bywater,460,1.4,3290
+625,39,Buckland,294,0.7,2443
+636,17,Hobbiton,437,1.3,2598
+808,19,Hobbiton,449,1.6,3027
+537,43,Buckland,579,0.5,2745
+908,13,Tuckborough,481,1.4,3557
+811,46,Buckland,439,1.8,3275
+884,40,Buckland,552,0.8,3809
+695,36,Tuckborough,302,2.2,2866
+799,52,Buckland,598,0.7,4297
+938,33,Hobbiton,408,1.3,3599
+962,9,Buckland,591,0.5,3831
+761,3,Tuckborough,517,1.1,3345
+893,4,Michel Delving,452,0.8,3788
+579,35,Buckland,601,0.6,2836
+355,20,Bywater,340,0.1,2277
+827,38,Hobbiton,462,1.1,3251
+584,44,Hobbiton,555,1.0,3205
+942,22,Bywater,414,1.9,3737
+823,43,Bywater,501,0.7,3698
+758,7,Buckland,717,1.1,3861
+882,21,Bywater,571,1.3,3476
+551,44,Michel Delving,335,1.0,2175
+829,24,Tuckborough,456,1.3,3613
+1182,32,Bywater,720,1.4,5579
+560,22,Bywater,519,1.0,2615
+811,27,Michel Delving,678,0.8,3783
+593,20,Hobbiton,383,1.0,2687
+652,62,Hobbiton,520,1.1,2819
+552,18,Buckland,601,0.6,2707
+810,41,Michel Delving,566,1.8,3695
+1081,58,Tuckborough,513,1.8,4477
+694,52,Tuckborough,381,1.2,2549
+619,22,Michel Delving,397,0.3,3107
+726,16,Tuckborough,655,0.9,3460
+767,54,Hobbiton,503,1.8,3153
+804,31,Tuckborough,504,0.5,3550
+1025,25,Tuckborough,551,1.2,4294
+927,32,Michel Delving,678,1.0,4101
+576,58,Michel Delving,471,1.0,2503
+680,28,Tuckborough,413,0.8,2905
+743,38,Bywater,564,0.5,3020
+570,26,Michel Delving,440,0.9,3154
+670,29,Buckland,590,1.3,2889
+729,26,Buckland,696,0.7,3975
+578,52,Hobbiton,520,0.2,2501
+764,16,Tuckborough,472,0.9,3152
+356,18,Bywater,667,0.6,2244
+545,21,Hobbiton,686,0.0,2824
+956,32,Tuckborough,313,1.7,3700
+405,76,Michel Delving,460,0.6,2085
+922,28,Buckland,481,1.0,3667
+949,9,Bywater,554,1.7,4062
+607,38,Buckland,574,0.6,2558
+948,33,Michel Delving,493,1.8,3851
+807,24,Tuckborough,642,0.8,3436
+746,47,Michel Delving,499,1.1,2824
+702,47,Michel Delving,619,1.1,3314
+886,30,Buckland,501,1.2,3626
+474,37,Bywater,446,0.8,2415
+817,25,Michel Delving,415,1.6,3119
+340,48,Buckland,347,0.5,1907
+602,25,Bywater,549,0.6,3077
+491,20,Tuckborough,551,0.2,2638
+347,51,Tuckborough,554,1.3,1999
+781,60,Hobbiton,493,0.5,3519
+795,59,Buckland,361,0.6,3049
+743,28,Bywater,357,0.7,2966
+510,28,Michel Delving,414,0.4,2674
+934,36,Tuckborough,673,1.0,4418
+1016,29,Bywater,597,0.2,4716
+951,27,Buckland,520,1.5,3995
+773,35,Hobbiton,569,0.9,3585
+659,33,Tuckborough,353,1.0,3064
+749,40,Bywater,459,0.7,3158
+876,46,Bywater,553,1.7,3407
+893,2,Bywater,563,1.9,4017
+781,29,Buckland,493,1.2,3396
+698,31,Buckland,453,1.0,2752
+690,31,Buckland,631,0.4,3422
+980,57,Michel Delving,500,1.1,3987
+665,30,Bywater,596,0.5,2955
+1062,33,Tuckborough,380,1.0,3914
+759,30,Buckland,404,0.5,2776
+869,34,Buckland,572,0.7,3547
+718,59,Bywater,449,1.3,2705
+592,10,Buckland,610,1.4,2665
+662,40,Michel Delving,367,0.8,3220
+519,29,Michel Delving,576,0.7,2593
+797,13,Buckland,470,1.9,3469
+743,42,Bywater,541,0.0,3270
+948,46,Bywater,372,0.8,3367
+1004,39,Bywater,557,1.6,4154
+781,53,Hobbiton,423,1.0,3505
+466,35,Buckland,438,1.6,2440
+667,33,Bywater,514,0.7,2805
+945,56,Michel Delving,426,1.1,3753
+763,31,Tuckborough,337,1.3,2702
+897,33,Tuckborough,450,1.0,3710
+841,2,Bywater,496,0.5,3373
+814,22,Tuckborough,647,0.3,4217
+911,19,Tuckborough,395,1.2,3290
+636,51,Hobbiton,551,0.7,2996
+621,34,Michel Delving,403,1.0,2806
+481,55,Michel Delving,608,0.1,2448
+598,60,Hobbiton,556,1.2,2663
+724,32,Hobbiton,436,0.4,2923
+660,57,Tuckborough,577,0.7,3176
+963,7,Buckland,626,1.0,4253
+938,35,Tuckborough,495,0.7,3896
+1103,26,Hobbiton,655,1.7,5139
+483,40,Michel Delving,413,0.2,1976
+930,6,Tuckborough,448,1.1,3599
+886,18,Buckland,523,1.0,3762
+686,42,Tuckborough,503,0.7,3397
+736,12,Bywater,325,1.2,3244
+949,21,Tuckborough,443,1.2,3686
+900,31,Hobbiton,454,1.0,3585
+688,43,Michel Delving,339,0.8,2717
+1245,45,Michel Delving,317,1.6,4553
+793,32,Hobbiton,458,1.0,3184
+626,40,Bywater,663,1.1,3054
+729,27,Hobbiton,499,0.6,2953
+756,42,Tuckborough,574,0.3,3182
+672,49,Hobbiton,647,0.9,3276
+848,19,Hobbiton,506,0.8,3415
+361,12,Bywater,432,1.3,2018
+795,19,Tuckborough,588,1.1,3608
+846,38,Buckland,414,1.0,3211
+560,61,Buckland,416,0.9,2508
+675,34,Michel Delving,444,1.1,2764
+974,23,Hobbiton,608,0.3,4121
+799,25,Michel Delving,523,0.4,3396
+880,34,Bywater,504,1.2,3541
+628,40,Buckland,578,1.5,2881
+788,36,Hobbiton,501,0.8,3455
+738,13,Bywater,607,1.7,3420
+829,41,Bywater,253,1.5,3098
+1140,10,Hobbiton,523,1.2,4693
+999,44,Bywater,281,1.6,3615
+630,18,Hobbiton,524,1.0,3330
+999,48,Hobbiton,481,0.7,4049
+839,39,Tuckborough,513,1.4,3459
+519,49,Michel Delving,525,0.2,2805
+788,22,Bywater,540,1.0,3580
+995,31,Bywater,406,0.9,3797
+698,61,Tuckborough,631,2.3,4003
+867,19,Tuckborough,473,2.3,3684
+858,24,Tuckborough,608,0.8,3736
+697,34,Buckland,755,0.8,3506
+1122,22,Buckland,713,1.2,5334
+1341,6,Buckland,583,1.7,5923
+667,41,Hobbiton,306,2.0,2413
+589,33,Bywater,734,0.6,2669
+944,34,Michel Delving,542,1.7,3864
+842,37,Hobbiton,541,1.1,3430
+398,34,Bywater,526,0.4,2063
+1151,23,Bywater,454,1.3,4988
+168,23,Tuckborough,416,1.1,1697
+764,48,Tuckborough,413,1.1,3190
+902,28,Hobbiton,397,1.8,3514
+1032,19,Tuckborough,275,0.6,3546
+851,7,Bywater,626,1.7,3946
+724,28,Tuckborough,294,1.9,2883
+654,14,Buckland,677,0.9,3409
+1016,24,Tuckborough,497,1.4,3909
+832,50,Bywater,521,0.9,3402
+684,16,Hobbiton,586,1.7,3298
+648,19,Michel Delving,480,0.7,2956
+797,48,Tuckborough,447,0.1,2895
+718,27,Bywater,551,1.1,3392
+750,33,Michel Delving,367,0.8,3108
+704,43,Michel Delving,381,0.8,2819
+836,61,Buckland,467,0.9,3958
+766,48,Michel Delving,440,1.1,3322
+780,47,Bywater,588,0.6,3387
+1146,40,Bywater,520,1.1,4488
+586,36,Tuckborough,525,1.2,2738
+852,38,Tuckborough,433,1.2,3654
+966,35,Tuckborough,361,1.1,3589
+698,52,Michel Delving,537,0.4,2790
+1271,33,Michel Delving,456,1.8,5023
+678,31,Buckland,509,1.6,3269
+413,4,Tuckborough,517,0.1,2288
+1090,30,Hobbiton,589,0.9,4757
+682,28,Buckland,650,0.2,3101
+755,41,Hobbiton,568,0.9,3548
+680,25,Michel Delving,368,1.8,2657
+1041,21,Buckland,623,1.5,4522
+773,32,Buckland,453,1.1,3123
+612,44,Bywater,379,0.0,3133
+1028,13,Michel Delving,582,2.0,4434
+1008,0,Michel Delving,457,1.2,4123
+814,43,Buckland,504,0.7,3678
+1168,34,Michel Delving,686,1.7,5177
+604,8,Buckland,462,0.8,2664
+630,47,Bywater,539,0.7,2826
+754,25,Buckland,521,0.7,3758
+668,21,Michel Delving,541,1.3,2938
+1205,19,Michel Delving,536,0.8,5068
+923,39,Buckland,677,1.1,5039
+991,14,Buckland,630,1.1,4745
+1100,4,Buckland,589,1.0,4634
+950,14,Tuckborough,698,1.4,4586
+747,41,Michel Delving,436,1.3,3472
+945,15,Michel Delving,586,1.2,4296
+1150,21,Tuckborough,427,1.5,4840
+829,14,Buckland,592,1.6,3590
+851,31,Bywater,621,1.2,3374
+805,26,Buckland,536,0.9,3374
+829,18,Buckland,562,0.7,3514
+932,10,Tuckborough,435,1.2,3820
+923,41,Michel Delving,705,1.0,4495
+976,32,Buckland,515,1.4,3733
+780,46,Michel Delving,457,1.1,3223
+320,38,Hobbiton,425,0.8,1792
+856,14,Michel Delving,335,0.7,3285
+1002,17,Bywater,494,0.9,3878
+739,33,Bywater,414,0.9,3247
+927,16,Buckland,457,0.8,3922
+985,6,Michel Delving,616,1.1,4212
+664,11,Buckland,480,0.6,3073
+569,56,Tuckborough,476,1.2,3150
+904,11,Bywater,390,0.8,3342
+704,8,Buckland,591,1.2,3418
+684,31,Tuckborough,263,1.5,2381
+974,6,Buckland,259,1.8,3768
+973,51,Michel Delving,566,1.3,4372
+809,30,Michel Delving,429,1.0,3337
+1093,18,Michel Delving,409,2.3,4198
+825,29,Michel Delving,705,1.5,3956
+880,17,Hobbiton,670,0.8,3992
+885,11,Tuckborough,558,1.2,3674
+948,28,Tuckborough,508,1.9,3844
+908,10,Michel Delving,394,0.2,3378
+682,20,Hobbiton,274,1.1,2594
+684,41,Michel Delving,565,1.5,3010
+650,13,Hobbiton,424,1.1,2763
+924,27,Michel Delving,451,0.9,3548
+957,28,Bywater,372,1.0,4313
+809,41,Bywater,494,1.7,3025
+714,2,Buckland,489,0.5,3393
+857,1,Michel Delving,329,1.5,3025
+758,33,Tuckborough,416,0.7,2913
+610,21,Buckland,449,2.0,2802
+609,17,Bywater,667,0.9,3007
+1217,7,Michel Delving,676,1.9,5309
+1139,19,Buckland,607,1.3,4971
+1079,38,Michel Delving,462,1.8,4408
+757,28,Bywater,447,0.3,3239
+342,24,Buckland,489,0.1,1904
+589,32,Bywater,511,1.9,2171
+854,47,Hobbiton,592,0.4,3599
+768,35,Bywater,325,0.6,3250
+772,20,Michel Delving,584,1.1,3609
+690,37,Tuckborough,557,0.8,3298
+489,24,Bywater,542,0.5,2711
+630,17,Tuckborough,568,0.8,2750
+980,23,Hobbiton,625,1.1,4074
+708,41,Buckland,514,1.0,3217
+1034,30,Buckland,474,0.6,4349
+753,28,Tuckborough,463,1.0,3121
+878,37,Buckland,542,0.6,3872
+925,52,Bywater,461,1.8,3589
+902,28,Tuckborough,487,1.2,3580
+921,45,Michel Delving,461,1.5,3750
+1092,34,Bywater,383,1.4,4152
+924,42,Bywater,682,1.0,4217
+626,20,Bywater,629,0.3,2766
+718,44,Michel Delving,621,0.7,3243
+628,23,Hobbiton,792,1.6,2946
+1107,11,Buckland,640,0.8,5176
+874,36,Tuckborough,523,0.6,3709
+1231,3,Hobbiton,607,1.2,5057
+834,28,Tuckborough,604,0.2,3600
+748,37,Buckland,749,0.6,3653
+797,28,Michel Delving,481,1.5,3417
+428,52,Bywater,478,1.0,2373
+990,21,Bywater,585,1.2,4058
+838,27,Michel Delving,575,0.3,3787
+1088,32,Hobbiton,603,0.6,4595
+1031,20,Hobbiton,552,1.3,4161
+1034,4,Tuckborough,369,1.5,3752
+468,46,Michel Delving,377,0.6,1999
+507,39,Hobbiton,502,0.8,2665
+1075,28,Michel Delving,531,0.8,4236
+1154,20,Buckland,365,2.1,4330
+990,30,Bywater,314,1.3,3710
+849,40,Bywater,616,0.5,3727
+1084,28,Bywater,417,1.1,4108
+505,60,Michel Delving,700,0.8,2486
+677,59,Michel Delving,446,0.6,3347
+825,12,Tuckborough,412,1.4,3516
+898,51,Bywater,377,1.4,3302
+1197,20,Tuckborough,501,0.8,4896
+770,37,Bywater,353,1.3,2700
+673,38,Tuckborough,479,0.9,3171
+515,51,Tuckborough,528,1.0,2563
+954,48,Buckland,274,0.4,3175
+804,39,Tuckborough,527,1.3,3796
+1171,46,Michel Delving,583,1.3,5108
+632,41,Tuckborough,472,0.6,2908
+874,13,Bywater,613,1.2,3764
+623,33,Tuckborough,666,1.2,2820
+608,16,Hobbiton,400,0.6,2732
+1050,28,Bywater,541,1.5,4303
+1119,22,Hobbiton,675,1.4,4846
+1133,20,Bywater,415,0.9,4264
+944,16,Michel Delving,660,1.1,4042
+672,21,Michel Delving,604,0.9,3700
+619,24,Michel Delving,545,1.1,3016
+906,38,Hobbiton,434,0.4,3435
+859,33,Buckland,408,0.7,3454
+1094,28,Bywater,496,1.8,4213
+685,27,Michel Delving,419,0.8,2646
+1050,25,Bywater,734,1.0,4597
+733,28,Hobbiton,508,1.0,3172
+785,41,Buckland,540,1.2,3223
+819,37,Hobbiton,312,1.3,2855
+1085,28,Bywater,544,0.5,4593
+859,47,Buckland,448,1.7,3543
+463,37,Buckland,505,0.4,2217
+1043,51,Hobbiton,336,0.7,3908
+1040,23,Michel Delving,548,1.8,4340
+1044,36,Bywater,592,1.5,4523
+657,20,Tuckborough,549,1.4,3023
+812,35,Tuckborough,509,0.8,3442
+404,44,Hobbiton,467,0.7,1918
+926,13,Bywater,487,2.8,3676
+958,21,Bywater,476,0.7,3925
+682,54,Hobbiton,409,1.1,2661
+714,37,Bywater,495,0.8,2910
+587,36,Michel Delving,507,1.5,2853
+941,30,Hobbiton,494,0.8,3690
+686,43,Michel Delving,510,0.5,2936
+696,26,Bywater,544,0.7,2720
+839,32,Hobbiton,456,1.1,3403
+762,25,Bywater,418,0.6,3013
+1278,2,Hobbiton,475,1.7,5338
+789,8,Bywater,712,1.4,3827
+672,54,Michel Delving,557,0.7,3343
+605,28,Michel Delving,444,0.8,2555
+1127,29,Bywater,538,1.7,4840
+623,37,Hobbiton,482,0.7,2580
+886,58,Tuckborough,683,0.5,4027
+758,4,Michel Delving,446,1.7,3167
+997,21,Michel Delving,373,2.1,4016
+732,15,Tuckborough,597,1.3,3151
+1061,21,Bywater,384,2.2,3881
+732,28,Hobbiton,492,0.2,2904
+799,22,Bywater,397,1.3,3087
+811,25,Buckland,630,0.5,3547
+798,19,Michel Delving,691,0.6,3715
+778,34,Buckland,518,1.2,3485
+669,40,Michel Delving,551,0.8,3257
+860,31,Michel Delving,561,1.0,3815
+884,0,Buckland,516,0.9,3601
+1172,39,Buckland,604,1.3,5295
+773,40,Bywater,628,0.3,3501
+523,0,Buckland,549,0.9,2848
+201,37,Bywater,494,0.0,1681
+955,25,Bywater,607,1.2,4379
+727,41,Bywater,671,0.4,3695
+627,44,Michel Delving,544,0.7,3035
+713,42,Michel Delving,369,1.4,2694
+819,0,Buckland,457,1.5,3394
+853,24,Michel Delving,397,0.6,3510
+1120,23,Buckland,423,1.2,4474
+814,33,Michel Delving,581,0.6,3891
+982,41,Hobbiton,487,1.4,3923
+747,22,Hobbiton,408,1.0,3181
+1052,30,Buckland,607,1.2,4573
+1212,7,Michel Delving,603,1.1,5432
+904,4,Michel Delving,604,1.0,4027
+1014,17,Bywater,395,1.0,3851
+974,9,Tuckborough,462,0.9,3879
+574,32,Buckland,359,0.7,2271
+732,42,Tuckborough,610,0.6,3421
+1178,7,Tuckborough,474,2.4,4754
+883,36,Buckland,481,0.6,3291
+685,49,Michel Delving,436,0.9,3053
+643,26,Buckland,521,0.0,2837
+522,47,Tuckborough,606,0.4,2669
+791,54,Michel Delving,573,1.1,4029
+892,34,Hobbiton,547,1.3,3848
+926,27,Buckland,519,1.7,4123
+863,39,Buckland,434,0.7,3358
+869,32,Michel Delving,651,1.9,3820
+1162,37,Hobbiton,297,1.7,4354
+866,40,Hobbiton,477,1.2,3577
+903,9,Michel Delving,407,1.1,3340
+918,28,Bywater,456,0.7,3393
+746,47,Buckland,502,0.6,3403
+922,25,Buckland,488,0.7,3676
+884,16,Tuckborough,558,0.1,4111
+1083,31,Michel Delving,591,1.4,4672
+413,43,Tuckborough,550,0.5,2369
+306,49,Tuckborough,417,1.1,2010
+643,31,Hobbiton,557,0.3,2914
+1027,14,Buckland,580,1.9,4359
+785,12,Tuckborough,459,0.4,3436
+483,30,Hobbiton,547,0.2,2410
+1119,53,Michel Delving,595,1.8,5098
+832,14,Tuckborough,359,1.9,2950
+1100,41,Buckland,480,1.7,4424
+1092,14,Tuckborough,573,1.4,4614
+806,44,Michel Delving,630,0.5,3431
+995,29,Tuckborough,470,0.8,3853
+923,36,Buckland,638,1.4,3976
+961,11,Hobbiton,554,1.7,3970
+556,23,Buckland,427,1.1,2690
+834,35,Hobbiton,484,1.0,3166
+780,43,Bywater,509,1.1,3369
+474,36,Buckland,539,0.0,2837
+1004,24,Buckland,529,1.2,4392
+260,61,Michel Delving,494,0.8,1448
+917,21,Tuckborough,612,0.9,4303
+1037,33,Hobbiton,434,0.6,4024
+604,48,Hobbiton,410,1.4,2462
+876,45,Michel Delving,654,0.7,3968
+1124,22,Michel Delving,620,0.6,5469
+943,32,Tuckborough,377,1.6,3625
+608,15,Tuckborough,578,1.2,3024
+803,24,Buckland,392,0.6,3327
+603,62,Bywater,521,0.8,2531
+707,37,Tuckborough,711,1.6,3134
+849,23,Michel Delving,535,1.6,3762
+1015,17,Tuckborough,462,1.4,3838
+511,50,Hobbiton,483,0.5,2769
+561,25,Bywater,438,1.4,2670
+743,8,Buckland,499,1.0,3373
+993,3,Hobbiton,493,1.5,3984
+440,54,Hobbiton,285,0.1,1841
+704,54,Bywater,508,0.5,3094
+698,30,Buckland,580,0.8,3404
+827,24,Michel Delving,578,1.2,3835
+776,30,Buckland,418,0.8,3008
+724,29,Tuckborough,382,1.8,3631
+1110,18,Hobbiton,396,1.0,4052
+817,15,Tuckborough,267,2.0,2942
+434,54,Michel Delving,631,0.3,2120
+786,24,Tuckborough,579,0.4,3669
+767,30,Buckland,367,1.1,3370
+407,57,Tuckborough,470,0.7,1988
+803,36,Michel Delving,739,1.2,4107
+975,36,Michel Delving,625,0.9,4413
+626,39,Michel Delving,490,0.7,2815
+810,30,Buckland,489,0.7,3272
+877,13,Michel Delving,531,1.6,3912
+938,26,Hobbiton,521,1.2,3788
+958,24,Michel Delving,403,1.3,3752
+769,6,Tuckborough,476,0.8,3059
+881,25,Tuckborough,583,1.2,3630
+779,26,Tuckborough,453,0.9,3413
+337,56,Buckland,430,0.9,1908
+861,30,Tuckborough,484,1.6,3445
+977,56,Buckland,534,1.2,4239
+533,34,Buckland,628,0.9,2737
+966,17,Michel Delving,451,0.8,3934
+732,38,Hobbiton,372,1.1,2953
+1234,0,Michel Delving,509,1.8,5069
+990,27,Michel Delving,415,1.1,3722
+782,32,Buckland,357,0.6,3137
+972,28,Buckland,550,0.6,4180
+977,25,Tuckborough,524,1.1,4199
+615,9,Tuckborough,408,0.5,3155
+771,37,Michel Delving,467,0.6,3276
+817,40,Bywater,467,1.5,3501
+571,35,Bywater,399,0.7,2168
+510,38,Tuckborough,376,1.1,2440
+892,32,Bywater,408,0.3,3431
+484,41,Tuckborough,530,0.5,2348
+979,13,Buckland,596,1.1,4197
+551,30,Michel Delving,246,0.7,2280
+357,14,Hobbiton,580,0.6,2103
+776,9,Michel Delving,437,1.1,3119
+707,3,Tuckborough,485,1.2,3094
+780,33,Tuckborough,473,1.5,3419
+1012,34,Michel Delving,470,0.8,4113
+722,25,Tuckborough,461,0.4,3288
+1134,44,Bywater,526,1.0,4676
+443,19,Bywater,755,0.7,2793
+882,43,Tuckborough,720,0.6,4064
+390,30,Tuckborough,469,0.6,2271
+569,4,Bywater,414,0.3,2364
+879,24,Tuckborough,492,0.6,3488
+368,49,Tuckborough,401,1.6,1653
+846,30,Michel Delving,503,1.4,3533
+873,38,Hobbiton,442,1.4,3524
+973,21,Bywater,444,0.4,3690
+743,20,Michel Delving,699,1.7,3452
+452,52,Hobbiton,587,0.4,2481
+654,33,Tuckborough,292,1.1,2380
+845,20,Tuckborough,424,1.6,3397
+825,33,Michel Delving,429,0.6,3276
+660,19,Tuckborough,559,1.0,3006
+1183,27,Buckland,384,1.1,4326
+940,40,Michel Delving,542,0.0,4047
+908,49,Hobbiton,441,0.4,3628
+554,22,Michel Delving,558,0.0,2521
+814,9,Bywater,559,1.3,3528
+907,20,Michel Delving,543,1.6,3800
+806,21,Tuckborough,408,1.2,3375
+862,26,Tuckborough,513,1.2,3748
+816,40,Buckland,480,0.3,3130
+501,64,Buckland,623,0.8,2906
+599,24,Buckland,462,0.5,2864
+1221,7,Hobbiton,636,1.3,5851
+1085,6,Buckland,358,1.6,4559
+932,15,Hobbiton,340,0.9,3450
+951,23,Buckland,338,1.2,3439
+859,29,Hobbiton,576,0.7,3507
+975,27,Michel Delving,476,0.9,3802
+798,21,Michel Delving,477,1.1,3671
+894,16,Tuckborough,566,1.3,3723
+949,19,Hobbiton,439,0.6,3715
+854,1,Bywater,407,0.7,3193
+938,43,Tuckborough,528,1.1,3646
+881,23,Michel Delving,514,0.7,4004
+1158,37,Hobbiton,557,0.9,4555
+543,47,Buckland,429,0.6,2375
+792,31,Bywater,279,0.7,3156
+1192,19,Michel Delving,474,2.4,5121
+737,35,Tuckborough,530,1.3,3336
+827,27,Hobbiton,525,1.1,3867
+595,39,Bywater,704,0.4,2617
+637,25,Hobbiton,570,1.5,3626
+1010,45,Buckland,461,0.7,4073
+1029,20,Tuckborough,495,0.2,4122
+897,18,Hobbiton,557,1.6,3799
+700,25,Michel Delving,585,0.2,3318
+727,48,Tuckborough,584,0.5,3444
+638,37,Michel Delving,528,0.9,2683
+975,43,Hobbiton,596,1.1,3965
+852,22,Tuckborough,384,0.9,3080
+1103,32,Michel Delving,621,1.0,4818
+562,40,Buckland,555,1.0,2641
+1201,0,Buckland,489,0.8,4811
+863,55,Hobbiton,560,0.9,3947
+810,41,Tuckborough,531,0.8,3314
+1224,42,Bywater,476,1.1,5155
+925,36,Tuckborough,435,1.6,3571
+620,29,Buckland,389,0.5,3111
+877,7,Michel Delving,607,0.9,3493
+722,25,Bywater,383,0.8,2751
+886,58,Hobbiton,562,0.8,3748
+823,25,Bywater,530,1.4,3410
+483,40,Hobbiton,462,1.0,2003
+899,34,Bywater,745,0.5,4238
+1059,50,Hobbiton,379,0.8,3633
+551,44,Hobbiton,452,0.9,2485
+849,43,Bywater,379,1.3,3209
+497,24,Bywater,407,0.9,2525
+645,52,Hobbiton,493,0.9,2876
+972,8,Buckland,442,2.0,3788
+603,27,Bywater,570,1.8,2693
+1192,21,Tuckborough,522,1.5,4745
+892,28,Michel Delving,552,1.4,4346
+1034,31,Hobbiton,540,0.3,4503
+1052,24,Hobbiton,460,1.1,4132
+870,46,Michel Delving,572,1.1,3940
+968,13,Buckland,381,1.2,3613
+916,1,Michel Delving,432,1.2,3454
+845,16,Bywater,509,1.3,3481
+608,34,Michel Delving,308,0.7,2765
+780,33,Hobbiton,382,0.7,3326
+518,27,Michel Delving,587,0.9,2434
+850,13,Tuckborough,385,1.1,3127
+563,49,Bywater,631,0.4,3496
+1156,12,Michel Delving,515,2.6,4374
+658,31,Hobbiton,682,1.7,2951
+904,37,Bywater,489,0.8,3385
+607,30,Hobbiton,502,1.9,2764
+852,11,Buckland,527,0.5,3469
+900,17,Tuckborough,485,0.8,3563
+455,33,Buckland,578,0.2,2220
+797,34,Tuckborough,555,0.9,3618
+765,63,Michel Delving,493,1.4,3069
+507,27,Bywater,508,0.1,2321
+1042,20,Michel Delving,543,1.8,4309
+1148,26,Tuckborough,500,1.2,4232
+1072,16,Tuckborough,475,1.2,4180
+658,17,Tuckborough,477,1.4,2818
+858,26,Hobbiton,503,1.1,3376
+790,41,Bywater,306,0.9,3254
+389,34,Michel Delving,679,0.8,2414
+221,41,Michel Delving,447,0.5,1638
+916,7,Buckland,549,0.6,3846
+919,26,Tuckborough,453,2.4,3440
+931,34,Tuckborough,425,0.3,3545
+873,49,Tuckborough,482,1.0,3320
+1363,12,Michel Delving,297,0.8,4995
+740,36,Buckland,407,0.9,3213
+958,17,Hobbiton,644,1.4,4408
+846,16,Bywater,589,1.6,3377
+602,27,Hobbiton,606,1.1,2850
+1156,25,Michel Delving,736,1.1,6322
+728,68,Tuckborough,467,0.8,2906
+801,20,Bywater,540,0.5,3511
+387,60,Michel Delving,640,0.9,2329
+793,32,Michel Delving,341,1.4,3227
+915,61,Michel Delving,415,1.2,3363
+840,7,Bywater,510,0.9,3501
+1008,14,Bywater,647,1.7,4806
+758,16,Buckland,540,0.7,3360
+1048,7,Buckland,418,1.1,3860
+827,36,Hobbiton,577,0.9,3863
+578,20,Bywater,455,0.1,2592
+1062,8,Bywater,609,0.9,4689
+982,13,Bywater,520,1.8,3961
+893,23,Buckland,577,2.1,3851
+440,37,Michel Delving,471,1.3,2104
+735,31,Tuckborough,447,1.6,3086
+1031,55,Buckland,466,1.2,4162
+982,5,Bywater,542,1.1,4240
+768,59,Buckland,344,0.7,2999
+374,40,Hobbiton,537,1.0,2217
+483,22,Bywater,753,0.8,2911
+454,29,Hobbiton,460,0.4,2009
+1060,6,Bywater,676,1.1,5126
+638,29,Buckland,470,0.7,3043
+1101,46,Michel Delving,585,0.2,4963
+683,31,Tuckborough,697,1.3,3415
+694,31,Hobbiton,588,1.2,3066
+983,33,Buckland,562,0.4,4149
+1027,45,Michel Delving,427,2.1,3840
+808,51,Buckland,574,1.4,3653
+667,41,Hobbiton,514,0.0,2811
+395,63,Tuckborough,605,0.4,2290
+699,29,Buckland,732,0.6,3442
+979,17,Bywater,457,0.7,3678
+931,30,Michel Delving,467,0.6,3461
+939,29,Buckland,435,0.2,4526
+765,4,Michel Delving,337,0.7,2951
+601,15,Bywater,542,1.3,2789
+847,28,Tuckborough,527,1.4,3317
+1060,24,Tuckborough,422,0.7,4658
+647,38,Bywater,609,0.8,2925
+775,30,Michel Delving,390,0.8,3306
+646,32,Buckland,418,1.5,2585
+379,14,Bywater,462,1.0,1988
+848,45,Hobbiton,489,1.4,3457
+544,29,Michel Delving,291,0.4,1962
+543,45,Tuckborough,408,0.8,2360
+891,33,Bywater,605,1.0,3855
+669,26,Tuckborough,537,0.1,2990
+701,18,Michel Delving,591,0.2,3076
+744,27,Tuckborough,550,1.4,3121
+580,34,Bywater,591,0.7,3123
+706,43,Michel Delving,419,0.9,2658
+841,0,Hobbiton,329,1.6,3335
+859,19,Bywater,513,1.5,3499
+941,0,Buckland,460,1.0,4342
+799,37,Bywater,539,1.5,3452
+618,40,Michel Delving,707,0.6,3181
+726,29,Bywater,427,1.0,3089
+1208,20,Hobbiton,370,0.3,4645
+882,23,Hobbiton,563,0.9,3702
+804,32,Buckland,415,0.4,3226
+695,67,Tuckborough,377,1.1,3748
+1181,50,Michel Delving,394,1.6,5104
+886,16,Michel Delving,609,1.3,4466
+648,55,Tuckborough,363,0.2,2925
+1035,21,Hobbiton,555,0.7,4603
+759,19,Hobbiton,536,1.3,4091
+769,57,Bywater,590,0.2,3851
+1062,41,Buckland,305,0.4,3630
+554,40,Buckland,575,1.3,2663
+746,20,Buckland,565,2.3,3674
+524,31,Bywater,422,0.9,2660
+585,55,Buckland,517,0.5,2741
+786,32,Tuckborough,750,0.9,3687
+956,42,Bywater,632,1.3,4316
+613,31,Tuckborough,544,0.7,3337
+1188,40,Bywater,478,1.2,4623
+1034,14,Buckland,471,1.5,4148
+518,38,Tuckborough,768,0.4,2823
+568,32,Tuckborough,494,1.1,2505
+1013,19,Tuckborough,186,0.9,3123
+615,12,Bywater,585,1.4,3009
+926,14,Michel Delving,535,0.9,3891
+1008,31,Buckland,463,1.0,4164
+911,38,Tuckborough,326,0.7,3259
+864,5,Michel Delving,569,0.0,4195
+671,41,Buckland,423,1.4,2935
+591,41,Buckland,499,0.7,2647
+995,58,Tuckborough,525,1.1,3929
+663,43,Tuckborough,316,1.9,2466
+733,37,Bywater,402,1.7,2981
+690,26,Michel Delving,531,0.8,3509
+908,50,Michel Delving,363,0.9,3633
+974,3,Tuckborough,439,1.4,3788
+419,23,Buckland,548,1.1,2139
+843,19,Tuckborough,460,0.4,3431
+1056,49,Buckland,473,1.0,4297
+719,34,Buckland,686,0.6,3608
+786,28,Tuckborough,490,1.8,3182
+880,13,Hobbiton,482,1.0,3899
+751,52,Michel Delving,435,0.8,3536
+538,28,Buckland,325,0.9,2151
+1065,23,Buckland,685,0.7,5041
+1046,1,Hobbiton,330,2.0,3938
+753,27,Bywater,604,0.8,3311
+826,43,Hobbiton,591,1.0,3840
+842,19,Hobbiton,485,1.1,3594
+547,41,Buckland,518,0.8,2613
+616,26,Michel Delving,570,0.3,2824
+391,43,Hobbiton,566,0.4,2034
+831,18,Bywater,447,1.1,3322
+668,27,Tuckborough,383,0.8,2555
+758,10,Hobbiton,508,1.1,3140
+807,29,Hobbiton,656,0.5,4007
+307,49,Bywater,407,0.7,1788
+624,29,Michel Delving,532,0.9,2855
