@@ -5,6 +5,10 @@ Welcome to **Data Science: A Practical and Philosophical Introduction**, an open
 
 ## Chapters
 
+### 0. Introduction to Colab
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/computing_concepts_python/blob/main/IntroCS_00_Intro_to_Colab.ipynb)  
+This chapter introduces you to **Google Colab**, the platform you will be using for running Python code in this textbook. You'll learn the basics of working in Colab, including writing code, adding markdown cells, and running Jupyter notebooks.
+
 ### 1. Organizing Data
 [Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_01_OrganizingData.ipynb)  
 In this chapter, you'll explore different ways to organize your data, covering topics such as directory structures, file naming conventions, and an introduction to data wrangling using **Python** and **Pandas**. Examples include organizing a dataset of game scores.
