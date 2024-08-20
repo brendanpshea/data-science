@@ -6,69 +6,47 @@ Welcome to **Data Science: A Practical and Philosophical Introduction**, an open
 ## Chapters
 
 ### 1. Organizing Data
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_01_OrganizingData.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_01_OrganizingData.ipynb)  
 In this chapter, you'll explore different ways to organize your data, covering topics such as directory structures, file naming conventions, and an introduction to data wrangling using **Python** and **Pandas**. Examples include organizing a dataset of game scores.
 
 ### 2. Types of Data
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_02_TypesOfData.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_02_TypesOfData.ipynb)  
 This chapter introduces you to different **data types** (e.g., categorical, numerical, ordinal), including hands-on examples using datasets such as **demographic surveys**. You'll use **Pandas** to identify and manage different data types, and learn how to handle conversions and type inference.
 
 ### 3. Minecrafting Our Data
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_03_MinecraftingOurData.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_03_MinecraftingOurData.ipynb)  
 An engaging example using **Minecraft-inspired data**. In this chapter, you will practice data extraction, transformation, and loading (ETL) using Python tools like **SQLite** and **Pandas**. You'll build a small SQLite database with village data, preparing it for future analysis.
 
 ### 4. Data Cleaning
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_04_DataCleaning.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_04_DataCleaning.ipynb)  
 In this chapter, you’ll delve into data cleaning techniques, including handling missing data, detecting outliers, and ensuring data consistency. You'll work with **real-world datasets**, such as survey responses, and use **Pandas** for transforming messy data into a clean, usable form.
 
 ### 5. Write Better Queries
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_05_WriteBetterQueries.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_05_WriteBetterQueries.ipynb)  
 Learn how to write efficient SQL queries to access and manipulate relational databases. You'll use **SQLite** to practice your query writing skills on datasets such as **movie databases** and learn how to optimize performance for large datasets.
 
 ### 6. Descriptive Statistics
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_06_DescriptiveStatistics.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_06_DescriptiveStatistics.ipynb)  
 This chapter covers the fundamentals of descriptive statistics. You'll use Python libraries like **NumPy** and **Pandas** to calculate measures of central tendency and variability. The examples include data from **weather observations** and **student test scores**.
 
 ### 7. Inferential Statistics
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_07_InferentialStats.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_07_InferentialStats.ipynb)  
 Dive into inferential statistics, learning about **hypothesis testing**, confidence intervals, and statistical tests such as t-tests and chi-squared tests. You'll apply these concepts to data such as **medical trial results** and **election polling data**, using **SciPy** and **Statsmodels**.
 
 ### 8. Analysis
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_08_Analysis.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_08_Analysis.ipynb)  
 In this chapter, you’ll analyze datasets using techniques such as **linear regression**, **correlation analysis**, and **classification**. The examples focus on **economic data** and **sports analytics**, using tools such as **Pandas**, **Statsmodels**, and **Scikit-learn**.
 
 ### 9. Reports
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_09_Reports.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_09_Reports.ipynb)  
 This chapter explores the best practices for creating professional reports. You'll learn how to use **Markdown**, **Jupyter Notebooks**, and **LaTeX** to format and present your analysis effectively. Examples include preparing reports on **company sales data**.
 
 ### 10. Data Dashboards
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_10_DataDashboards.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_10_DataDashboards.ipynb)  
 Learn to create interactive **data dashboards** using **Dash** and **Plotly**. In this chapter, you’ll build a simple dashboard that visualizes data from a **fictional retail company**, allowing users to interact with the data and generate custom views.
 
 ### 11. Data Governance
-<a href="https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_11_DataGovernance.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>  
+[Open In Colab](https://colab.research.google.com/github/brendanpshea/data-science/blob/main/DataScience_11_DataGovernance.ipynb)  
 This chapter covers the critical topic of **data governance**, including issues related to data privacy, ethics, and compliance. You'll explore real-world examples of data governance challenges faced by a fictional DNA testing company (set in the world of the X-men) using a **Postgres** database.
 
 ## Additional Notebooks
