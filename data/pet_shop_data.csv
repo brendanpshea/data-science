@@ -1,0 +1,221 @@
+store_id,date,pet_type,num_adopted,total_sales,employee,customer_satisfaction
+S003,2024-09-25,Hamster,10,$695.25,Beast boy,
+S001,2024-09-06,Hamster,7,$455,Cyborg,0.7
+S002,2024-09-02,Hamster,N/A,,Beast boy,N/A
+S001,2024-09-10,Dog,N/A,$534.36,Robin,N/A
+S003,2024-09-18,Bird,N/A,$444.59,raven,
+S003,2024-09-12,Cat,3,$685,Beast boy,4.4
+S004,2024-09-19,Bird,0,,Robin,-2.6
+S001,2024-09-23,Dog,7,,Beast Boy,
+S002,2024-09-02,Cat,6,$75.62,Starfire,-0.9
+S001,2024-09-16,Hamster,,$426.72,Robin,-3.4
+S001,2024-09-05,Cat,3,,Beast boy,N/A
+S003,2024-09-09,Rabbit,6,$320.08,Cyborg,-1.5
+S001,2024-09-03,Bird,,,starfire,
+S001,2024-09-20,Bird,8,$376.17,Beast boy,-1.7
+S003,2024-09-02,Hamster,7,$543,Cyborg,
+S003,2024-09-25,Hamster,N/A,$535.26,Robin,-2.0
+S001,2024-09-03,Bird,,$354.42,raven,-4.0
+S003,2024-09-18,Rabbit,7,,Robin,0.2
+S004,2024-09-02,Dog,N/A,,Beast boy,-2.2
+S001,2024-09-15,Cat,N/A,$287.75,Beast Boy,-1.1
+S004,2024-09-29,Hamster,7,$176,raven,N/A
+S003,2024-09-07,Bird,4,,Beast boy,N/A
+S002,2024-09-07,Bird,N/A,$297.67,Starfire,N/A
+S001,2024-08-31,Rabbit,5,$488.64,beast boy,
+S004,2024-09-29,Dog,2,$624,Cyborg,N/A
+S002,2024-09-07,Bird,2,,raven,N/A
+S001,2024-09-09,Bird,,,starfire,
+S001,2024-09-29,Hamster,,$246.42,Robin,-1.0
+S004,2024-09-14,Dog,0,$88,Cyborg,1.6
+S003,2024-09-15,Hamster,6,$697.35,starfire,3.3
+S004,2024-09-13,Dog,,$202.62,cyborg,N/A
+S003,2024-09-21,Dog,N/A,,cyborg,
+S003,2024-09-25,Bird,6,$603,Cyborg,-0.9
+S004,2024-09-28,Rabbit,N/A,$208,Cyborg,4.4
+S002,2024-09-18,Cat,6,,Starfire,
+S003,2024-09-04,Dog,,$315.28,Robin,
+S004,2024-09-20,Hamster,7,$272,beast boy,
+S003,2024-09-29,Cat,9,$291,raven,-4.0
+S004,2024-09-25,Bird,6,,robin,-2.3
+S003,2024-09-28,Rabbit,,$636.10,cyborg,-0.1
+S003,2024-09-09,Bird,7,$308.79,Beast Boy,N/A
+S001,2024-09-23,Bird,,$666.86,cyborg,
+S001,2024-09-23,Bird,,$480.80,Cyborg,4.1
+S002,2024-09-23,Hamster,,$82.88,Raven,N/A
+S001,2024-09-04,Cat,N/A,$692.73,robin,2.4
+S001,2024-09-27,Rabbit,1,$94.60,Cyborg,-1.2
+S001,2024-09-13,Cat,N/A,$288,beast boy,4.8
+S002,2024-09-01,Cat,3,$553.34,Starfire,N/A
+S003,2024-09-15,Rabbit,10,$230.23,robin,-0.6
+S002,2024-09-04,Cat,3,$401.14,robin,-3.4
+S002,2024-09-27,Cat,2,$479.69,Robin,-3.2
+S001,2024-09-05,Rabbit,2,,raven,N/A
+S002,2024-09-20,Dog,,$228,Beast boy,-2.3
+S004,2024-09-29,Bird,5,,Raven,
+S003,2024-09-05,Hamster,9,$115,Beast Boy,N/A
+S003,2024-09-06,Hamster,2,,starfire,3.8
+S001,2024-09-05,Dog,N/A,,Cyborg,-2.6
+S003,2024-09-18,Cat,,$194.01,robin,0.4
+S001,2024-09-16,Cat,6,$583,Starfire,N/A
+S002,2024-09-19,Hamster,10,$347.73,cyborg,-0.7
+S004,2024-09-03,Hamster,1,$461,raven,N/A
+S003,2024-09-13,Hamster,N/A,,Starfire,
+S003,2024-09-01,Cat,N/A,$641.31,Robin,
+S003,2024-09-07,Dog,N/A,$259.37,Starfire,
+S004,2024-09-18,Hamster,,,Raven,3.4
+S004,2024-09-07,Rabbit,N/A,$382,cyborg,N/A
+S001,2024-09-02,Rabbit,7,$593,raven,-0.2
+S001,2024-09-19,Hamster,N/A,$669,Starfire,3.5
+S002,2024-09-13,Rabbit,,,raven,
+S002,2024-09-10,Dog,N/A,,Beast Boy,N/A
+S001,2024-09-09,Hamster,5,$490,Beast Boy,
+S004,2024-09-17,Cat,7,$473,raven,
+S004,2024-09-16,Rabbit,,$458,Beast boy,
+S002,2024-09-08,Hamster,,$370,Raven,N/A
+S003,2024-09-22,Dog,,$311,cyborg,N/A
+S002,2024-09-18,Dog,N/A,$669.84,Robin,N/A
+S004,2024-09-02,Dog,N/A,$109.30,Cyborg,3.6
+S002,2024-09-19,Bird,0,$330.72,raven,
+S002,2024-09-19,Cat,,,Beast boy,
+S001,2024-09-18,Rabbit,8,$175,starfire,-1.2
+S003,2024-09-27,Rabbit,,,robin,0.8
+S002,2024-09-25,Cat,7,,cyborg,0.2
+S003,2024-09-17,Rabbit,,,starfire,1.2
+S004,2024-09-08,Cat,N/A,,Cyborg,2.2
+S002,2024-09-08,Bird,N/A,$160,Beast Boy,
+S001,2024-09-08,Hamster,N/A,$599.49,cyborg,1.2
+S004,2024-09-16,Hamster,N/A,$545.69,Starfire,N/A
+S003,2024-09-25,Dog,4,,robin,-3.7
+S001,2024-09-14,Bird,N/A,$448.82,Raven,-3.9
+S001,2024-09-04,Cat,8,$445.85,Starfire,N/A
+S001,2024-09-20,Dog,,$366,Raven,N/A
+S003,2024-09-11,Rabbit,N/A,$278.17,starfire,
+S004,2024-09-23,Rabbit,N/A,$418.11,Raven,
+S002,2024-09-14,Cat,5,$142.22,Raven,
+S001,2024-09-06,Rabbit,0,$109.64,robin,N/A
+S002,2024-08-31,Bird,4,$514,cyborg,N/A
+S004,2024-09-12,Bird,4,,Starfire,
+S003,2024-09-29,Dog,10,,Raven,
+S004,2024-09-14,Dog,N/A,$105.22,Cyborg,N/A
+S004,2024-09-14,Hamster,,$152.32,raven,1.3
+S001,2024-09-02,Hamster,5,$328,robin,4.6
+S003,2024-09-29,Bird,4,,Cyborg,2.7
+S003,2024-09-19,Hamster,,$337.33,Cyborg,1.3
+S003,2024-09-04,Bird,1,$166,Robin,N/A
+S002,2024-09-20,Dog,N/A,,robin,-4.3
+S003,2024-09-24,Dog,1,,Cyborg,N/A
+S001,2024-09-21,Cat,6,$483.64,starfire,4.7
+S002,2024-09-19,Hamster,,$306.92,Starfire,N/A
+S002,2024-09-03,Rabbit,,$55.00,beast boy,
+S004,2024-09-21,Hamster,4,$311,cyborg,-2.8
+S004,2024-08-31,Hamster,1,$57,cyborg,-2.7
+S002,2024-09-21,Cat,N/A,$535.56,Raven,
+S003,2024-09-04,Cat,1,,starfire,
+S001,2024-09-02,Dog,3,$413.17,Cyborg,N/A
+S004,2024-09-02,Rabbit,,$93,Beast boy,N/A
+S004,2024-09-05,Hamster,,$129,Beast boy,
+S002,2024-09-19,Bird,0,$637,Starfire,N/A
+S003,2024-09-22,Rabbit,,$477,cyborg,
+S003,2024-09-17,Dog,10,$71,Starfire,-4.7
+S001,2024-09-01,Hamster,10,$682,robin,
+S004,2024-09-09,Hamster,1,$590.82,Cyborg,-3.7
+S003,2024-09-10,Hamster,N/A,$333.86,beast boy,
+S004,2024-09-16,Hamster,2,,Starfire,0.9
+S003,2024-09-06,Hamster,N/A,,beast boy,2.6
+S001,2024-09-16,Dog,,$270.68,Starfire,4.7
+S002,2024-09-10,Rabbit,N/A,$99.65,starfire,N/A
+S001,2024-09-03,Cat,,$248,Beast boy,N/A
+S004,2024-09-22,Hamster,7,$278.21,Raven,
+S004,2024-08-31,Hamster,N/A,$116.82,Starfire,
+S004,2024-09-15,Hamster,1,,Raven,-2.6
+S002,2024-09-02,Hamster,10,$693,Beast Boy,
+S001,2024-09-14,Cat,10,,Robin,4.0
+S004,2024-09-23,Rabbit,,,raven,N/A
+S004,2024-09-10,Dog,,$689,beast boy,-2.6
+S001,2024-09-15,Hamster,10,$692,raven,-2.0
+S002,2024-09-04,Hamster,,$119,Beast boy,N/A
+S001,2024-09-28,Cat,5,$360,robin,5.0
+S004,2024-09-07,Hamster,,,Cyborg,3.3
+S004,2024-09-23,Bird,,$522,Raven,
+S001,2024-09-03,Cat,,$427,Starfire,N/A
+S002,2024-09-09,Rabbit,N/A,,Starfire,-4.2
+S003,2024-09-12,Cat,,$443,robin,2.8
+S002,2024-09-16,Dog,,$92,Beast boy,N/A
+S004,2024-09-24,Dog,0,,Raven,
+S002,2024-09-21,Cat,,$669,Raven,-4.6
+S001,2024-09-12,Hamster,10,$113,Cyborg,4.5
+S003,2024-09-17,Hamster,4,,Raven,0.9
+S003,2024-09-18,Cat,,$104.81,Cyborg,
+S001,2024-09-18,Rabbit,0,$498,cyborg,N/A
+S002,2024-09-25,Cat,2,$390.64,beast boy,-4.2
+S004,2024-09-06,Hamster,8,$339,Robin,1.9
+S003,2024-09-04,Bird,,,starfire,2.5
+S002,2024-09-18,Hamster,10,,Robin,0.5
+S003,2024-09-24,Dog,N/A,$267.52,Cyborg,
+S001,2024-09-26,Hamster,,$445,Robin,-1.6
+S001,2024-09-29,Dog,7,$213.80,Beast Boy,N/A
+S002,2024-09-12,Hamster,3,,starfire,
+S003,2024-09-26,Cat,,$408,Raven,
+S001,2024-09-25,Dog,N/A,$679.00,beast boy,N/A
+S001,2024-09-10,Bird,N/A,$136,Cyborg,N/A
+S001,2024-09-07,Rabbit,,$413.30,robin,N/A
+S003,2024-09-16,Cat,,$485.58,Starfire,3.7
+S001,2024-09-13,Rabbit,,,Raven,
+S004,2024-09-27,Bird,5,$421,cyborg,N/A
+S004,2024-09-20,Cat,,$269,Beast boy,
+S001,2024-09-21,Bird,3,$665.98,cyborg,0.5
+S001,2024-09-11,Cat,,$197.25,Raven,
+S003,2024-08-31,Rabbit,10,,Robin,0.1
+S001,2024-09-25,Dog,0,$551.07,Raven,N/A
+S001,2024-09-01,Hamster,N/A,$480.25,cyborg,
+S004,2024-09-26,Bird,1,$438.21,Beast boy,-1.3
+S003,2024-09-10,Rabbit,8,$167.55,Cyborg,
+S002,2024-09-21,Rabbit,6,$94,starfire,1.4
+S004,2024-09-17,Rabbit,N/A,$293,raven,
+S004,2024-09-01,Cat,,$446.89,Cyborg,3.0
+S001,2024-09-21,Dog,N/A,$366,cyborg,
+S001,2024-09-03,Rabbit,,$248,robin,-3.1
+S002,2024-09-04,Cat,,$634,Raven,N/A
+S002,2024-09-27,Cat,8,$338,Beast Boy,N/A
+S002,2024-09-12,Hamster,N/A,$376.89,raven,
+S003,2024-09-25,Rabbit,,$580.98,Robin,
+S003,2024-09-29,Cat,1,,robin,-3.9
+S004,2024-09-05,Cat,N/A,,Robin,
+S001,2024-09-13,Bird,N/A,$657.29,Robin,N/A
+S002,2024-09-17,Bird,N/A,$214,Starfire,3.0
+S002,2024-09-16,Cat,6,$342.06,Cyborg,N/A
+S004,2024-09-20,Dog,,$590.18,Starfire,2.2
+S001,2024-09-28,Bird,10,$580.86,raven,
+S001,2024-09-29,Hamster,2,,raven,-0.7
+S002,2024-09-27,Rabbit,6,$293.07,Raven,
+S002,2024-09-21,Hamster,9,$78,Starfire,
+S002,2024-09-01,Rabbit,N/A,$655.04,Cyborg,
+S001,2024-09-19,Cat,7,$343,Beast Boy,-4.0
+S004,2024-09-14,Bird,4,,Robin,3.5
+S002,2024-09-17,Dog,N/A,$354.92,Starfire,-1.2
+S004,2024-09-09,Cat,,$69,Beast boy,
+S003,2024-09-06,Bird,N/A,,beast boy,
+S001,2024-09-19,Bird,,,Robin,N/A
+S004,2024-09-21,Rabbit,,$325.12,Raven,N/A
+S004,2024-09-15,Bird,N/A,$245.75,Robin,N/A
+S001,2024-09-14,Bird,N/A,$448.82,Raven,-3.9
+S004,2024-09-19,Bird,0,,Robin,-2.6
+S003,2024-09-06,Hamster,N/A,,beast boy,2.6
+S001,2024-09-09,Bird,,,starfire,
+S002,2024-09-18,Dog,N/A,$669.84,Robin,N/A
+S001,2024-09-21,Cat,6,$483.64,starfire,4.7
+S003,2024-09-07,Bird,4,,Beast boy,N/A
+S003,2024-09-15,Hamster,6,$697.35,starfire,3.3
+S004,2024-09-20,Dog,,$590.18,Starfire,2.2
+S004,2024-09-20,Hamster,7,$272,beast boy,
+S001,2024-09-04,Cat,8,$445.85,Starfire,N/A
+S001,2024-09-18,Rabbit,8,$175,starfire,-1.2
+S003,2024-09-25,Dog,4,,robin,-3.7
+S002,2024-09-19,Bird,0,$637,Starfire,N/A
+S002,2024-09-20,Dog,,$228,Beast boy,-2.3
+S004,2024-09-10,Dog,,$689,beast boy,-2.6
+S003,2024-09-06,Hamster,N/A,,beast boy,2.6
+S001,2024-09-04,Cat,8,$445.85,Starfire,N/A
+S003,2024-09-10,Hamster,N/A,$333.86,beast boy,
+S004,2024-09-29,Dog,2,$624,Cyborg,N/A
