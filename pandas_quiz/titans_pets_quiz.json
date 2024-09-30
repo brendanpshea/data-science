@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Display the first 5 rows of the DataFrame.",
+    "answer": "result = data.head()"
+  },
+  {
+    "question": "Display the last 5 rows of the DataFrame.",
+    "answer": "result = data.tail()"
+  },
+  {
+    "question": "Generate descriptive statistics for numerical columns.",
+    "answer": "result = data.describe()"
+  },
+  {
+    "question": "Display the column names of the DataFrame.",
+    "answer": "result = data.columns"
+  },
+  {
+    "question": "Display the data types of each column.",
+    "answer": "result = data.dtypes"
+  },
+  {
+    "question": "Count the number of non-null values in each column.",
+    "answer": "result = data.count()"
+  },
+  {
+    "question": "Display basic information about the DataFrame.",
+    "answer": "result = data.info()"
+  },
+  {
+    "question": "Count the number of unique values in the 'store_id' column.",
+    "answer": "result = data['store_id'].nunique()"
+  },
+  {
+    "question": "Display the unique values in the 'pet_type' column.",
+    "answer": "result = data['pet_type'].unique()"
+  },
+  {
+    "question": "Calculate the average number of pets adopted (assuming 'num_adopted' is already numeric).",
+    "answer": "result = data['num_adopted'].mean()"
+  },
+  {
+    "question": "Find the earliest date in the dataset (assuming 'date' is already in datetime format).",
+    "answer": "result = data['date'].min()"
+  },
+  {
+    "question": "Count the number of sales for each pet type.",
+    "answer": "result = data['pet_type'].value_counts()"
+  },
+  {
+    "question": "Calculate the total sales for each store (assuming 'total_sales' is already numeric).",
+    "answer": "result = data.groupby('store_id')['total_sales'].sum()"
+  },
+  {
+    "question": "Find the top employee with the highest average customer satisfaction (assuming 'customer_satisfaction' is numeric).",
+    "answer": "result = data.groupby('employee')['customer_satisfaction'].mean().idxmax()"
+  },
+  {
+    "question": "Identify the number of duplicate rows in the dataset.",
+    "answer": "result = data.duplicated().sum()"
+  },
+  {
+    "question": "Remove duplicate rows from the dataset.",
+    "answer": "result = data.drop_duplicates()"
+  },
+  {
+    "question": "Fill null values in the 'num_adopted' column with the median value.",
+    "answer": "result = data['num_adopted'].fillna(data['num_adopted'].median())"
+  },
+  {
+    "question": "Standardize the 'store_id' column by ensuring all values start with 'S'.",
+    "answer": "result = data['store_id'].str.replace('^(?!S)', 'S', regex=True)"
+  },
+  {
+    "question": "Create a new column 'month' extracted from the 'date' column (assuming 'date' is in datetime format).",
+    "answer": "result = data.assign(month=data['date'].dt.month)"
+  },
+  {
+    "question": "Calculate the average total sales per month (assuming 'date' is in datetime format and 'total_sales' is numeric).",
+    "answer": "result = data.groupby(data['date'].dt.month)['total_sales'].mean()"
+  }
+]
