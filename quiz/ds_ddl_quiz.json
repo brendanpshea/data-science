@@ -1,0 +1,117 @@
+[
+    {
+        "question": "Create a table named \"agents\" that includes an integer column 'agent_id' as the primary key and a text column 'name' for the agent's name.",
+        "answer": "CREATE TABLE agents (agent_id INTEGER PRIMARY KEY, name TEXT);",
+        "setup": "DROP TABLE IF EXISTS agents;"
+    },
+    {
+        "question": "Create a table named \"gadgets\" with an integer primary key 'gadget_id', a text column 'gadget_name' for the gadget's name, and a text column 'type' for the gadget type.",
+        "answer": "CREATE TABLE gadgets (gadget_id INTEGER PRIMARY KEY, gadget_name TEXT, type TEXT);",
+        "setup": "DROP TABLE IF EXISTS gadgets;"
+    },
+    {
+        "question": "Create a table named \"employees\" with an integer primary key 'employee_id', a VARCHAR(100) column 'first_name', a VARCHAR(100) column 'last_name', and a DATE column 'hire_date'.",
+        "answer": "CREATE TABLE employees (employee_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), hire_date DATE);",
+        "setup": "DROP TABLE IF EXISTS employees;"
+    },
+    {
+        "question": "Create a table named \"departments\" with an integer primary key 'department_id' and a VARCHAR(50) column 'department_name'.",
+        "answer": "CREATE TABLE departments (department_id INTEGER PRIMARY KEY, department_name VARCHAR(50));",
+        "setup": "DROP TABLE IF EXISTS departments;"
+    },
+    {
+        "question": "Create a table named \"products\" with an integer primary key 'product_id', a VARCHAR(100) column 'product_name', a DECIMAL(10,2) column 'price', and an INTEGER column 'stock_quantity'.",
+        "answer": "CREATE TABLE products (product_id INTEGER PRIMARY KEY, product_name VARCHAR(100), price DECIMAL(10,2), stock_quantity INTEGER);",
+        "setup": "DROP TABLE IF EXISTS products;"
+    },
+    {
+        "question": "Alter the \"employees\" table to add a VARCHAR(100) column 'email'.",
+        "answer": "ALTER TABLE employees ADD COLUMN email VARCHAR(100);",
+        "setup": "CREATE TABLE employees (employee_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), hire_date DATE);"
+    },
+    {
+        "question": "Create a table named \"customers\" with an integer primary key 'customer_id', a VARCHAR(100) column 'customer_name', and a VARCHAR(100) column 'contact_email'.",
+        "answer": "CREATE TABLE customers (customer_id INTEGER PRIMARY KEY, customer_name VARCHAR(100), contact_email VARCHAR(100));",
+        "setup": "DROP TABLE IF EXISTS customers;"
+    },
+    {
+        "question": "Create a table named \"projects\" with an integer primary key 'project_id', a VARCHAR(100) column 'project_name', a DATE column 'start_date', and a DATE column 'end_date'.",
+        "answer": "CREATE TABLE projects (project_id INTEGER PRIMARY KEY, project_name VARCHAR(100), start_date DATE, end_date DATE);",
+        "setup": "DROP TABLE IF EXISTS projects;"
+    },
+    {
+        "question": "Create a table named \"researchers\" with an integer primary key 'researcher_id', a VARCHAR(100) column 'first_name', a VARCHAR(100) column 'last_name', and a VARCHAR(100) column 'field_of_study'.",
+        "answer": "CREATE TABLE researchers (researcher_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), field_of_study VARCHAR(100));",
+        "setup": "DROP TABLE IF EXISTS researchers;"
+    },
+    {
+        "question": "Alter the \"projects\" table to add a VARCHAR(200) column 'description'.",
+        "answer": "ALTER TABLE projects ADD COLUMN description VARCHAR(200);",
+        "setup": "CREATE TABLE projects (project_id INTEGER PRIMARY KEY, project_name VARCHAR(100), start_date DATE, end_date DATE);"
+    },
+    {
+        "question": "Create a table named \"experiments\" with an integer primary key 'experiment_id', a VARCHAR(100) column 'experiment_name', a DATE column 'date_conducted', and an integer column 'project_id' referencing the 'projects' table.",
+        "answer": "CREATE TABLE experiments (experiment_id INTEGER PRIMARY KEY, experiment_name VARCHAR(100), date_conducted DATE, project_id INTEGER, FOREIGN KEY (project_id) REFERENCES projects(project_id));",
+        "setup": "DROP TABLE IF EXISTS experiments; CREATE TABLE projects (project_id INTEGER PRIMARY KEY, project_name VARCHAR(100), start_date DATE, end_date DATE);"
+    },
+    {
+        "question": "Create a table named \"department_employees\" with an integer column 'department_id' and an integer column 'employee_id', both forming a composite primary key, and foreign keys referencing the 'departments' and 'employees' tables respectively.",
+        "answer": "CREATE TABLE department_employees (department_id INTEGER, employee_id INTEGER, PRIMARY KEY (department_id, employee_id), FOREIGN KEY (department_id) REFERENCES departments(department_id), FOREIGN KEY (employee_id) REFERENCES employees(employee_id));",
+        "setup": "DROP TABLE IF EXISTS department_employees; CREATE TABLE departments (department_id INTEGER PRIMARY KEY, department_name VARCHAR(50)); CREATE TABLE employees (employee_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), hire_date DATE);"
+    },
+    {
+        "question": "Create a table named \"sales\" with an integer primary key 'sale_id', a DATE column 'sale_date', a DECIMAL(10,2) column 'amount', and an integer column 'customer_id' referencing the 'customers' table.",
+        "answer": "CREATE TABLE sales (sale_id INTEGER PRIMARY KEY, sale_date DATE, amount DECIMAL(10,2), customer_id INTEGER, FOREIGN KEY (customer_id) REFERENCES customers(customer_id));",
+        "setup": "DROP TABLE IF EXISTS sales; CREATE TABLE customers (customer_id INTEGER PRIMARY KEY, customer_name VARCHAR(100), contact_email VARCHAR(100));"
+    },
+    {
+        "question": "Alter the \"products\" table to drop the 'stock_quantity' column.",
+        "answer": "ALTER TABLE products DROP COLUMN stock_quantity;",
+        "setup": "CREATE TABLE products (product_id INTEGER PRIMARY KEY, product_name VARCHAR(100), price DECIMAL(10,2), stock_quantity INTEGER);"
+    },
+    {
+        "question": "Create a table named \"inventory\" with an integer primary key 'inventory_id', an integer column 'product_id' referencing the 'products' table, and an INTEGER column 'quantity'.",
+        "answer": "CREATE TABLE inventory (inventory_id INTEGER PRIMARY KEY, product_id INTEGER, quantity INTEGER, FOREIGN KEY (product_id) REFERENCES products(product_id));",
+        "setup": "DROP TABLE IF EXISTS inventory; CREATE TABLE products (product_id INTEGER PRIMARY KEY, product_name VARCHAR(100), price DECIMAL(10,2), stock_quantity INTEGER);"
+    },
+    {
+        "question": "Create a table named \"suppliers\" with an integer primary key 'supplier_id', a VARCHAR(100) column 'supplier_name', and a VARCHAR(100) column 'contact_number'.",
+        "answer": "CREATE TABLE suppliers (supplier_id INTEGER PRIMARY KEY, supplier_name VARCHAR(100), contact_number VARCHAR(100));",
+        "setup": "DROP TABLE IF EXISTS suppliers;"
+    },
+    {
+        "question": "Create a table named \"product_suppliers\" with an integer column 'product_id' and an integer column 'supplier_id', both forming a composite primary key, and foreign keys referencing the 'products' and 'suppliers' tables respectively.",
+        "answer": "CREATE TABLE product_suppliers (product_id INTEGER, supplier_id INTEGER, PRIMARY KEY (product_id, supplier_id), FOREIGN KEY (product_id) REFERENCES products(product_id), FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id));",
+        "setup": "DROP TABLE IF EXISTS product_suppliers; CREATE TABLE products (product_id INTEGER PRIMARY KEY, product_name VARCHAR(100), price DECIMAL(10,2), stock_quantity INTEGER); CREATE TABLE suppliers (supplier_id INTEGER PRIMARY KEY, supplier_name VARCHAR(100), contact_number VARCHAR(100));"
+    },
+    {
+        "question": "Drop the \"inventory\" table.",
+        "answer": "DROP TABLE inventory;",
+        "setup": "CREATE TABLE inventory (inventory_id INTEGER PRIMARY KEY, product_id INTEGER, quantity INTEGER, FOREIGN KEY (product_id) REFERENCES products(product_id));"
+    },
+    {
+        "question": "Alter the \"customers\" table to rename the column 'contact_email' to 'email_address'.",
+        "answer": "ALTER TABLE customers RENAME COLUMN contact_email TO email_address;",
+        "setup": "CREATE TABLE customers (customer_id INTEGER PRIMARY KEY, customer_name VARCHAR(100), contact_email VARCHAR(100));"
+    },
+    {
+        "question": "Create a table named \"research_publications\" with an integer primary key 'publication_id', a VARCHAR(200) column 'title', a DATE column 'publication_date', and an integer column 'researcher_id' referencing the 'researchers' table.",
+        "answer": "CREATE TABLE research_publications (publication_id INTEGER PRIMARY KEY, title VARCHAR(200), publication_date DATE, researcher_id INTEGER, FOREIGN KEY (researcher_id) REFERENCES researchers(researcher_id));",
+        "setup": "DROP TABLE IF EXISTS research_publications; CREATE TABLE researchers (researcher_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), field_of_study VARCHAR(100));"
+    },
+    {
+        "question": "Create a table named \"project_assignments\" with an integer column 'project_id' and an integer column 'researcher_id', both forming a composite primary key, and foreign keys referencing the 'projects' and 'researchers' tables respectively.",
+        "answer": "CREATE TABLE project_assignments (project_id INTEGER, researcher_id INTEGER, PRIMARY KEY (project_id, researcher_id), FOREIGN KEY (project_id) REFERENCES projects(project_id), FOREIGN KEY (researcher_id) REFERENCES researchers(researcher_id));",
+        "setup": "DROP TABLE IF EXISTS project_assignments; CREATE TABLE projects (project_id INTEGER PRIMARY KEY, project_name VARCHAR(100), start_date DATE, end_date DATE); CREATE TABLE researchers (researcher_id INTEGER PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(100), field_of_study VARCHAR(100));"
+    },
+    {
+        "question": "Drop the \"suppliers\" table.",
+        "answer": "DROP TABLE suppliers;",
+        "setup": "CREATE TABLE suppliers (supplier_id INTEGER PRIMARY KEY, supplier_name VARCHAR(100), contact_number VARCHAR(100));"
+    },
+    {
+        "question": "Create a table named \"inventory_movements\" with an integer primary key 'movement_id', a DATE column 'movement_date', an INTEGER column 'inventory_id' referencing the 'inventory' table, and a VARCHAR(50) column 'movement_type'.",
+        "answer": "CREATE TABLE inventory_movements (movement_id INTEGER PRIMARY KEY, movement_date DATE, inventory_id INTEGER, movement_type VARCHAR(50), FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id));",
+        "setup": "DROP TABLE IF EXISTS inventory_movements; CREATE TABLE inventory (inventory_id INTEGER PRIMARY KEY, product_id INTEGER, quantity INTEGER, FOREIGN KEY (product_id) REFERENCES products(product_id));"
+    }
+]
