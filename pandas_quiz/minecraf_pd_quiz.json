@@ -16,16 +16,12 @@
     "answer": "result = data.shape"
   },
   {
-    "question": "Get the column labels of the DataFrame as a list. Use the 'columns' attribute.",
+    "question": "Get the column labels of the DataFrame as a list. Use the 'columns' attribute and `tolist` method.",
     "answer": "result = data.columns.tolist()"
   },
   {
     "question": "Fill any missing values in the 'light_level' column with 0. Use the 'fillna' method.",
     "answer": "result = data.fillna({'light_level': 0})"
-  },
-  {
-    "question": "Change the data type of the 'observation_date' column to datetime. Use the 'astype' method.",
-    "answer": "result = data.astype({'observation_date': 'datetime64[ns]'})"
   },
   {
     "question": "Create a new column 'temperature_celsius' by converting 'temperature' from Fahrenheit to Celsius using the formula C = (F - 32) * 5/9. Use basic arithmetic operations.",
@@ -44,10 +40,6 @@
     "answer": "result = data.sort_values(by='temperature')"
   },
   {
-    "question": "Apply a function to 'mob_count' to classify counts greater than 5 as 'High' and others as 'Low', and create a new column 'mob_density'. Use the 'apply' method.",
-    "answer": "result = data.assign(mob_density=data['mob_count'].apply(lambda x: 'High' if x > 5 else 'Low'))"
-  },
-  {
     "question": "Select rows where 'biome' is 'Forest'. Use the 'loc' indexer.",
     "answer": "result = data.loc[data['biome'] == 'Forest']"
   },
@@ -62,10 +54,6 @@
   {
     "question": "Group the DataFrame by 'mob_type' and calculate the sum of 'mob_count' for each group. Use the 'groupby' method.",
     "answer": "result = data.groupby('mob_type')['mob_count'].sum().reset_index()"
-  },
-  {
-    "question": "Create a pivot table with 'biome' as index and 'mob_type' as columns, showing the mean 'temperature'. Use the 'pivot_table' method.",
-    "answer": "result = data.pivot_table(values='temperature', index='biome', columns='mob_type', aggfunc='mean')"
   },
   {
     "question": "Perform aggregate operations to find the mean 'temperature' and the sum of 'mob_count'. Use the 'agg' method.",
