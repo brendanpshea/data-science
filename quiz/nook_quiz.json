@@ -59,7 +59,6 @@
     "question": "Show all columns of products sorted by Price in descending order.",
     "answer": "SELECT * FROM DimProduct ORDER BY Price DESC;"
   },
-  [
   {
     "question": "Find the total sales amount for each product. List the ProductID, ProductName, and total sales amount, alias the total sales amount as 'TotalSales'.",
     "answer": "SELECT dp.ProductID, dp.ProductName, SUM(fs.TotalAmount) AS TotalSales FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.ProductID, dp.ProductName;"
