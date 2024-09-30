@@ -1,0 +1,123 @@
+[
+  {
+    "question": "Show all columns of all products in the DimProduct table.",
+    "answer": "SELECT * FROM DimProduct;"
+  },
+  {
+    "question": "List the ProductName and Price of all products.",
+    "answer": "SELECT ProductName, Price FROM DimProduct;"
+  },
+  {
+    "question": "List the ProductName and Price of all products that cost more than 100.",
+    "answer": "SELECT ProductName, Price FROM DimProduct WHERE Price > 100;"
+  },
+  {
+    "question": "Display the CustomerName and Island of all customers.",
+    "answer": "SELECT CustomerName, Island FROM DimCustomer;"
+  },
+  {
+    "question": "Show all columns of stores located on 'Sunny Isle'.",
+    "answer": "SELECT * FROM DimStore WHERE Island = 'Sunny Isle';"
+  },
+  {
+    "question": "List the ProductName of all products in the 'Furniture' category.",
+    "answer": "SELECT ProductName FROM DimProduct WHERE Category = 'Furniture';"
+  },
+  {
+    "question": "Show all columns of products whose ProductName contains the word 'Vintage'.",
+    "answer": "SELECT * FROM DimProduct WHERE ProductName LIKE '%Vintage%';"
+  },
+  {
+    "question": "Find the total number of customers.",
+    "answer": "SELECT COUNT(*) AS TotalCustomers FROM DimCustomer;"
+  },
+  {
+    "question": "Find the average price of all products.",
+    "answer": "SELECT AVG(Price) AS AveragePrice FROM DimProduct;"
+  },
+  {
+    "question": "List the StoreName and Manager of all stores managed by 'Isabelle'.",
+    "answer": "SELECT StoreName, Manager FROM DimStore WHERE Manager = 'Isabelle';"
+  },
+  {
+    "question": "Show all columns of sales where the Quantity is greater than 3.",
+    "answer": "SELECT * FROM FactSales WHERE Quantity > 3;"
+  },
+  {
+    "question": "Find the maximum TotalAmount in the FactSales table.",
+    "answer": "SELECT MAX(TotalAmount) AS MaxTotalAmount FROM FactSales;"
+  },
+  {
+    "question": "List the Date of all entries in the DimDate table where the Season is 'Winter'.",
+    "answer": "SELECT Date FROM DimDate WHERE Season = 'Winter';"
+  },
+  {
+    "question": "Display all columns of customers whose CustomerName starts with 'A'.",
+    "answer": "SELECT * FROM DimCustomer WHERE CustomerName LIKE 'A%';"
+  },
+  {
+    "question": "Show all columns of products sorted by Price in descending order.",
+    "answer": "SELECT * FROM DimProduct ORDER BY Price DESC;"
+  },
+  [
+  {
+    "question": "Find the total sales amount for each product. List the ProductID, ProductName, and total sales amount, alias the total sales amount as 'TotalSales'.",
+    "answer": "SELECT dp.ProductID, dp.ProductName, SUM(fs.TotalAmount) AS TotalSales FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.ProductID, dp.ProductName;"
+  },
+  {
+    "question": "List the number of sales transactions for each store. Show the StoreID, StoreName, and the count of sales transactions, alias the count as 'TransactionCount'.",
+    "answer": "SELECT ds.StoreID, ds.StoreName, COUNT(fs.SaleID) AS TransactionCount FROM FactSales fs JOIN DimStore ds ON fs.StoreID = ds.StoreID GROUP BY ds.StoreID, ds.StoreName;"
+  },
+  {
+    "question": "Find the average quantity sold per sale. Show the average quantity, alias it as 'AverageQuantity'.",
+    "answer": "SELECT AVG(Quantity) AS AverageQuantity FROM FactSales;"
+  },
+  {
+    "question": "List the total number of units sold for each product category. Show the Category and total units sold, alias total units sold as 'TotalUnitsSold'.",
+    "answer": "SELECT dp.Category, SUM(fs.Quantity) AS TotalUnitsSold FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.Category;"
+  },
+  {
+    "question": "Find the total sales amount for each customer. List the CustomerID, CustomerName, and total sales amount, alias total sales amount as 'TotalSpent'.",
+    "answer": "SELECT dc.CustomerID, dc.CustomerName, SUM(fs.TotalAmount) AS TotalSpent FROM FactSales fs JOIN DimCustomer dc ON fs.CustomerID = dc.CustomerID GROUP BY dc.CustomerID, dc.CustomerName;"
+  },
+  {
+    "question": "Show the total sales amount per season. List the Season and total sales amount, alias total sales amount as 'SeasonalSales'.",
+    "answer": "SELECT dd.Season, SUM(fs.TotalAmount) AS SeasonalSales FROM FactSales fs JOIN DimDate dd ON fs.DateID = dd.DateID GROUP BY dd.Season;"
+  },
+  {
+    "question": "List the number of unique customers per island. Show the Island and the count of unique customers, alias the count as 'CustomerCount'.",
+    "answer": "SELECT dc.Island, COUNT(DISTINCT dc.CustomerID) AS CustomerCount FROM DimCustomer dc GROUP BY dc.Island;"
+  },
+  {
+    "question": "Find the total quantity sold for each subcategory. List the Subcategory and total quantity sold, alias total quantity as 'TotalQuantity'.",
+    "answer": "SELECT dp.Subcategory, SUM(fs.Quantity) AS TotalQuantity FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.Subcategory;"
+  },
+  {
+    "question": "List the customers who have made more than 5 purchases. Show the CustomerID, CustomerName, and count of purchases, alias count as 'PurchaseCount'.",
+    "answer": "SELECT dc.CustomerID, dc.CustomerName, COUNT(fs.SaleID) AS PurchaseCount FROM FactSales fs JOIN DimCustomer dc ON fs.CustomerID = dc.CustomerID GROUP BY dc.CustomerID, dc.CustomerName HAVING COUNT(fs.SaleID) > 5;"
+  },
+  {
+    "question": "Find the store with the highest total sales amount. Show the StoreID, StoreName, and total sales amount, alias total sales amount as 'TotalSales'.",
+    "answer": "SELECT ds.StoreID, ds.StoreName, SUM(fs.TotalAmount) AS TotalSales FROM FactSales fs JOIN DimStore ds ON fs.StoreID = ds.StoreID GROUP BY ds.StoreID, ds.StoreName ORDER BY TotalSales DESC LIMIT 1;"
+  },
+  {
+    "question": "List the average TotalAmount of sales for each store. Show the StoreID, StoreName, and average TotalAmount, alias average as 'AverageSaleAmount'.",
+    "answer": "SELECT ds.StoreID, ds.StoreName, AVG(fs.TotalAmount) AS AverageSaleAmount FROM FactSales fs JOIN DimStore ds ON fs.StoreID = ds.StoreID GROUP BY ds.StoreID, ds.StoreName;"
+  },
+  {
+    "question": "Find the number of products sold in each category. Show the Category and the count of distinct products sold, alias count as 'ProductsSold'.",
+    "answer": "SELECT dp.Category, COUNT(DISTINCT dp.ProductID) AS ProductsSold FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.Category;"
+  },
+  {
+    "question": "List the total sales amount per month. Show the Year, Month, and total sales amount, alias total sales as 'MonthlySales'.",
+    "answer": "SELECT dd.Year, dd.Month, SUM(fs.TotalAmount) AS MonthlySales FROM FactSales fs JOIN DimDate dd ON fs.DateID = dd.DateID GROUP BY dd.Year, dd.Month ORDER BY dd.Year, dd.Month;"
+  },
+  {
+    "question": "Find the products that have generated more than 2000 in total sales amount. Show the ProductID, ProductName, and total sales amount, alias total sales as 'TotalSales'.",
+    "answer": "SELECT dp.ProductID, dp.ProductName, SUM(fs.TotalAmount) AS TotalSales FROM FactSales fs JOIN DimProduct dp ON fs.ProductID = dp.ProductID GROUP BY dp.ProductID, dp.ProductName HAVING SUM(fs.TotalAmount) > 2000;"
+  },
+  {
+    "question": "List the total quantity sold by each manager. Show the Manager and total quantity sold, alias total quantity as 'TotalQuantitySold'.",
+    "answer": "SELECT ds.Manager, SUM(fs.Quantity) AS TotalQuantitySold FROM FactSales fs JOIN DimStore ds ON fs.StoreID = ds.StoreID GROUP BY ds.Manager;"
+  }
+]
