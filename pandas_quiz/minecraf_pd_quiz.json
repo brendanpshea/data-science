@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Display the first 5 rows of the DataFrame. Use the 'head' method.",
+    "answer": "result = data.head()"
+  },
+  {
+    "question": "Display the last 5 rows of the DataFrame. Use the 'tail' method.",
+    "answer": "result = data.tail()"
+  },
+  {
+    "question": "Generate descriptive statistics for numerical columns. Use the 'describe' method.",
+    "answer": "result = data.describe()"
+  },
+  {
+    "question": "Retrieve the dimensions of the DataFrame (rows and columns). Use the 'shape' attribute.",
+    "answer": "result = data.shape"
+  },
+  {
+    "question": "Get the column labels of the DataFrame as a list. Use the 'columns' attribute.",
+    "answer": "result = data.columns.tolist()"
+  },
+  {
+    "question": "Fill any missing values in the 'light_level' column with 0. Use the 'fillna' method.",
+    "answer": "result = data.fillna({'light_level': 0})"
+  },
+  {
+    "question": "Change the data type of the 'observation_date' column to datetime. Use the 'astype' method.",
+    "answer": "result = data.astype({'observation_date': 'datetime64[ns]'})"
+  },
+  {
+    "question": "Create a new column 'temperature_celsius' by converting 'temperature' from Fahrenheit to Celsius using the formula C = (F - 32) * 5/9. Use basic arithmetic operations.",
+    "answer": "result = data.assign(temperature_celsius=(data['temperature'] - 32) * 5/9)"
+  },
+  {
+    "question": "Rename the column 'mob_type' to 'entity_type'. Use the 'rename' method.",
+    "answer": "result = data.rename(columns={'mob_type': 'entity_type'})"
+  },
+  {
+    "question": "Remove the 'humidity' column from the DataFrame. Use the 'drop' method.",
+    "answer": "result = data.drop(columns=['humidity'])"
+  },
+  {
+    "question": "Sort the DataFrame by 'temperature' in ascending order. Use the 'sort_values' method.",
+    "answer": "result = data.sort_values(by='temperature')"
+  },
+  {
+    "question": "Apply a function to 'mob_count' to classify counts greater than 5 as 'High' and others as 'Low', and create a new column 'mob_density'. Use the 'apply' method.",
+    "answer": "result = data.assign(mob_density=data['mob_count'].apply(lambda x: 'High' if x > 5 else 'Low'))"
+  },
+  {
+    "question": "Select rows where 'biome' is 'Forest'. Use the 'loc' indexer.",
+    "answer": "result = data.loc[data['biome'] == 'Forest']"
+  },
+  {
+    "question": "Select the first three rows and first two columns of the DataFrame. Use the 'iloc' indexer.",
+    "answer": "result = data.iloc[:3, :2]"
+  },
+  {
+    "question": "Select rows where 'light_level' is greater than 5. Use conditional selection.",
+    "answer": "result = data[data['light_level'] > 5]"
+  },
+  {
+    "question": "Group the DataFrame by 'mob_type' and calculate the sum of 'mob_count' for each group. Use the 'groupby' method.",
+    "answer": "result = data.groupby('mob_type')['mob_count'].sum().reset_index()"
+  },
+  {
+    "question": "Create a pivot table with 'biome' as index and 'mob_type' as columns, showing the mean 'temperature'. Use the 'pivot_table' method.",
+    "answer": "result = data.pivot_table(values='temperature', index='biome', columns='mob_type', aggfunc='mean')"
+  },
+  {
+    "question": "Perform aggregate operations to find the mean 'temperature' and the sum of 'mob_count'. Use the 'agg' method.",
+    "answer": "result = data.agg({'temperature': 'mean', 'mob_count': 'sum'})"
+  },
+  {
+    "question": "Generate descriptive statistics for all columns, including non-numeric ones. Use the 'describe' method with the 'include' parameter.",
+    "answer": "result = data.describe(include='all')"
+  },
+  {
+    "question": "Reset the index of the DataFrame after sorting it by 'humidity' in descending order. Use the 'sort_values' and 'reset_index' methods.",
+    "answer": "result = data.sort_values(by='humidity', ascending=False).reset_index(drop=True)"
+  }
+]
