@@ -5,7 +5,7 @@ from io import StringIO
 from abc import ABC, abstractmethod
 from IPython.display import display, clear_output
 from ipywidgets import (Textarea, Button, VBox, HBox, Layout, IntProgress, 
-                        Tab, IntText, Label, HTML as HTMLWidget)
+                        Tab, IntText, Label, HTML as HTMLWidget, Output)
 
 # Data Interface
 class DataInterface(ABC):
@@ -39,7 +39,7 @@ class CSVData(DataInterface):
         columns = [(None, col_name, str(dtype)) for col_name, dtype in zip(self.dataframe.columns, self.dataframe.dtypes)]
         return (self.dataframe_name, columns)
 
-# UI Interface (same as before)
+# UI Interface
 class UIInterface(ABC):
     @abstractmethod
     def display_question(self, question, schema):
@@ -51,6 +51,10 @@ class UIInterface(ABC):
 
     @abstractmethod
     def display_results(self, user_result, correct_result):
+        pass
+
+    @abstractmethod
+    def display_results_non_df(self, user_result):
         pass
 
     @abstractmethod
@@ -96,28 +100,34 @@ class IpywidgetsUI(UIInterface):
         self.quiz = quiz
 
     def setup_ui(self):
+        # Progress bar and question label
         self.progress_bar = IntProgress(min=0, max=1, value=0, description='Progress:')
         self.question_label = HTMLWidget(value='')
         
+        # Text area for code input
         self.text_area = Textarea(placeholder='Type your Pandas code here...', 
                                   layout=Layout(width='100%', height='150px'))
         self.submit_button = Button(description="Submit", button_style='success')
         self.clear_button = Button(description="Clear", button_style='warning')
         self.hint_button = Button(description="Hint", button_style='info')
         
+        # Skip question functionality
         self.skip_input = IntText(value=1, min=1, layout=Layout(width='60px'))
         self.skip_button = Button(description="Skip to", button_style='info')
         self.skip_box = HBox([Label('Go to question:'), self.skip_input, self.skip_button])
 
+        # Button actions
         self.submit_button.on_click(lambda _: self.quiz.submit_code())
         self.clear_button.on_click(lambda _: self.clear_code())
         self.skip_button.on_click(lambda _: self.skip_to_question())
         self.hint_button.on_click(lambda _: self.quiz.show_hint())
     
+        # Query (code input) box
         self.query_box = VBox([self.text_area, 
                                HBox([self.submit_button, self.clear_button, self.hint_button]),
                                self.skip_box])
         
+        # Results area
         self.results_area = HTMLWidget(value='')
         self.try_again_button = Button(description="Try Again", button_style='warning')
         self.next_button = Button(description="Next Question", button_style='info')
@@ -125,10 +135,28 @@ class IpywidgetsUI(UIInterface):
         self.next_button.on_click(lambda _: self.quiz.next_question())
         
         self.results_box = VBox([self.results_area, HBox([self.try_again_button, self.next_button])])
-        
-        self.tab = Tab(children=[self.query_box, self.results_box])
-        self.tab.set_title(0, 'Code')
+
+        # Directions area
+        directions_html = """
+        <h3>Directions:</h3>
+        <ul>
+            <li>Use the DataFrame <code>data</code> to perform the required operations.</li>
+            <li>Assign your final result to a variable named <code>result</code>.</li>
+            <li>Use the specific Pandas method mentioned in the hint.</li>
+            <li>Your code should be a single line, e.g., <code>result = data.head()</code>.</li>
+            <li>Click <strong>Submit</strong> to check your answer.</li>
+            <li>If you need help, click <strong>Hint</strong> to get a hint.</li>
+            <li>Use the <strong>Directions</strong> tab anytime to review these instructions.</li>
+        </ul>
+        """
+        self.directions_area = HTMLWidget(value=directions_html)
+
+        # Tabs
+        self.tab = Tab()
+        self.tab.children = [self.query_box, self.results_box, self.directions_area]
+        self.tab.set_title(0, 'Question')
         self.tab.set_title(1, 'Results')
+        self.tab.set_title(2, 'Directions')
         
         self.main_box = VBox([self.progress_bar, self.question_label, self.tab])
 
@@ -140,7 +168,7 @@ class IpywidgetsUI(UIInterface):
         self.text_area.value = ''
         self.submit_button.disabled = False
         self.skip_input.max = self.quiz.total_questions
-        self.tab.selected_index = 0  # Switch to Code tab
+        self.tab.selected_index = 0  # Switch to Question tab
         if not self.displayed:
             display(self.main_box)
             self.displayed = True
@@ -164,11 +192,20 @@ class IpywidgetsUI(UIInterface):
             self.try_again_button.disabled = False
 
         results_html = feedback + count_info
-        results_html += "<h4>Your Results (first five rows):</h4>"
+        results_html += "<h4>Your Result (first five rows):</h4>"
         results_html += user_result.head().to_html(index=False)
-        results_html += "<h4>Expected Results (first five rows):</h4>"
+        results_html += "<h4>Expected Result (first five rows):</h4>"
         results_html += correct_result.head().to_html(index=False)
         
+        self.results_area.value = results_html
+        self.tab.selected_index = 1  # Switch to Results tab
+
+    def display_results_non_df(self, user_result):
+        feedback = "<h3 style='color: green;'>Correct! Your code produced the expected result.</h3>"
+        self.next_button.disabled = False
+        self.try_again_button.disabled = True
+        results_html = feedback + "<h4>Your Result:</h4>"
+        results_html += f"<pre>{user_result}</pre>"
         self.results_area.value = results_html
         self.tab.selected_index = 1  # Switch to Results tab
 
@@ -180,7 +217,7 @@ class IpywidgetsUI(UIInterface):
         self.text_area.value = ''
 
     def try_again(self):
-        self.tab.selected_index = 0  # Switch back to Code tab
+        self.tab.selected_index = 0  # Switch back to Question tab
 
     def next_question(self):
         self.quiz.next_question()
@@ -198,9 +235,10 @@ class IpywidgetsUI(UIInterface):
 
     def render_table_schema(self, schema):
         dataframe_name, columns = schema
-        schema_html = "<h3>Available DataFrame:</h3><ul>"
-        column_info = ", ".join(f"{column[1]} ({column[2]})" for column in columns)
-        schema_html += f"<li><b>{dataframe_name}</b>: {column_info}</li>"
+        schema_html = "<h3>Available DataFrame:</h3>"
+        schema_html += f"<p><code>{dataframe_name}</code> with columns:</p><ul>"
+        for _, col_name, col_type in columns:
+            schema_html += f"<li><b>{col_name}</b> ({col_type})</li>"
         schema_html += "</ul>"
         return schema_html
 
@@ -217,7 +255,7 @@ class IpywidgetsUI(UIInterface):
         clear_output(wait=True)
         display(self.main_box)
 
-# Main Quiz class (modified for single DataFrame)
+# Main Quiz class
 class Quiz:
     def __init__(self, data: DataInterface, ui: UIInterface, questions, answers):
         self.data = data
@@ -244,24 +282,64 @@ class Quiz:
         # Prepare the execution environment
         exec_env = {'pd': pd, self.dataframe_name: dataframe}
         try:
-            # Execute user's code
-            exec(user_code, {}, exec_env)
+            # Capture stdout to prevent unwanted prints
+            import io
+            from contextlib import redirect_stdout
+            f = io.StringIO()
+            with redirect_stdout(f):
+                exec(user_code, {}, exec_env)
             if 'result' not in exec_env:
                 self.ui.display_error("Please assign your result to a variable named 'result'.")
                 return
             user_result = exec_env['result']
-            if not isinstance(user_result, pd.DataFrame):
-                self.ui.display_error("Your 'result' variable must be a Pandas DataFrame.")
+
+            # Get the expected result type for the current question
+            expected_type = self.get_expected_result_type(self.current_index)
+
+            if not isinstance(user_result, expected_type):
+                self.ui.display_error(f"Your 'result' variable must be of type {expected_type.__name__}.")
                 return
+
             # Execute correct answer code
             answer_code = self.answers[self.current_index]
             answer_env = {'pd': pd, self.dataframe_name: dataframe}
             exec(answer_code, {}, answer_env)
             correct_result = answer_env['result']
+
             # Compare the results
-            self.ui.display_results(user_result.reset_index(drop=True), correct_result.reset_index(drop=True))
+            if isinstance(user_result, pd.DataFrame):
+                # Compare DataFrames
+                if user_result.reset_index(drop=True).equals(correct_result.reset_index(drop=True)):
+                    self.ui.display_results(user_result, correct_result)
+                else:
+                    self.ui.display_error("Incorrect result. Please try again.")
+            else:
+                # Compare other types (e.g., tuples, lists)
+                if user_result == correct_result:
+                    self.ui.display_results_non_df(user_result)
+                else:
+                    self.ui.display_error("Incorrect result. Please try again.")
         except Exception as e:
-            self.ui.display_error(f"Error executing your code: {str(e)}")
+            error_output = f.getvalue()
+            full_error_message = f"Error executing your code: {str(e)}"
+            if error_output:
+                full_error_message += f"\n\nOutput:\n{error_output}"
+            self.ui.display_error(full_error_message)
+
+    def get_expected_result_type(self, question_index):
+        # Define expected result types for each question
+        # Adjust the expected types based on the questions
+        # For simplicity, assuming all questions expect DataFrame unless specified
+        non_df_questions = {2, 3}  # Adjust indices as per your questions (zero-based)
+        if question_index in non_df_questions:
+            if question_index == 2:
+                return list  # data.columns.tolist() returns a list
+            elif question_index == 3:
+                return tuple  # data.shape returns a tuple
+            else:
+                return pd.DataFrame
+        else:
+            return pd.DataFrame
 
     def next_question(self):
         self.current_index += 1
@@ -290,14 +368,10 @@ class Quiz:
         self.ui.show_hint(hint)
 
 # Functions to load quizzes by ID or URL
-def pandas_quiz_from_id(quiz_id="employees"):
-    if quiz_id == "employees":
-        csv_url = "https://raw.githubusercontent.com/yourusername/datasets/main/employees.csv"
-        json_url = "https://raw.githubusercontent.com/yourusername/quizzes/main/employees_quiz.json"
-        dataframe_name = "data"
-    elif quiz_id == "sales":
-        csv_url = "https://raw.githubusercontent.com/yourusername/datasets/main/sales.csv"
-        json_url = "https://raw.githubusercontent.com/yourusername/quizzes/main/sales_quiz.json"
+def pandas_quiz_from_id(quiz_id="example"):
+    if quiz_id == "example":
+        csv_url = "https://raw.githubusercontent.com/yourusername/datasets/main/data.csv"
+        json_url = "https://raw.githubusercontent.com/yourusername/quizzes/main/pandas_quiz.json"
         dataframe_name = "data"
     else:
         print(f"Quiz ID '{quiz_id}' not recognized.")
