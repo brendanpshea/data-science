@@ -26,8 +26,6 @@ class CSVData(DataInterface):
         """
         self.csv_content = csv_content
         self.dataframe_name = dataframe_name
-        self.dataframe = None
-        self.load_dataframe()
 
     def load_dataframe(self):
         self.dataframe = pd.read_csv(StringIO(self.csv_content))
@@ -74,7 +72,7 @@ class UIInterface(ABC):
         pass
 
     @abstractmethod
-    def show_hint(self, hint):
+    def show_hint(self):
         pass
 
     @abstractmethod
@@ -236,7 +234,7 @@ class IpywidgetsUI(UIInterface):
     def render_table_schema(self, schema):
         dataframe_name, columns = schema
         schema_html = "<h3>Available DataFrame:</h3>"
-        schema_html += f"<p>A dataframe named <strong>{dataframe_name}</strong> with columns:</p><ul>"
+        schema_html += f"<p><code>{dataframe_name}</code> with columns:</p><ul>"
         for _, col_name, col_type in columns:
             schema_html += f"<li><b>{col_name}</b> ({col_type})</li>"
         schema_html += "</ul>"
@@ -271,6 +269,8 @@ class Quiz:
         self.display_current_question()
 
     def display_current_question(self):
+        # Reload the data for each question
+        self.data.load_dataframe()
         schema = self.data.get_table_schema()
         question = self.questions[self.current_index]
         self.ui.display_question(question, schema)
@@ -301,6 +301,9 @@ class Quiz:
                 return
 
             # Execute correct answer code
+            # Reload the data before executing the correct answer
+            self.data.load_dataframe()
+            dataframe = self.data.get_dataframe()
             answer_code = self.answers[self.current_index]
             answer_env = {'pd': pd, self.dataframe_name: dataframe}
             exec(answer_code, {}, answer_env)
@@ -402,3 +405,115 @@ def pandas_quiz_url(csv_url, json_url, dataframe_name='data'):
     ui = IpywidgetsUI()
     quiz = Quiz(data, ui, questions, answers)
     quiz.start()
+
+# Sample usage
+def start_pandas_quiz():
+    # Define the CSV data as a multi-line string
+    data_csv = """observation_date,biome,temperature,humidity,light_level,mob_type,mob_count
+2024-05-02,Swamp,23.31,95.26,9,Skeleton,12
+2024-02-13,Desert,31.06,35.80,7,Zombie,2
+2024-09-21,Forest,26.41,88.98,12,Zombie,1
+2024-09-09,Plains,17.68,28.06,0,Skeleton,8
+2024-11-01,Forest,24.24,77.49,0,Skeleton,1
+"""
+
+    # Sample quiz data (questions and answers)
+    quiz_json = """[
+      {
+        "question": "Display the first 5 rows of the DataFrame. Use the 'head' method.",
+        "answer": "result = data.head()"
+      },
+      {
+        "question": "Display the last 5 rows of the DataFrame. Use the 'tail' method.",
+        "answer": "result = data.tail()"
+      },
+      {
+        "question": "Get the column labels of the DataFrame as a list. Use the 'columns' attribute.",
+        "answer": "result = data.columns.tolist()"
+      },
+      {
+        "question": "Retrieve the dimensions of the DataFrame (rows and columns). Use the 'shape' attribute.",
+        "answer": "result = data.shape"
+      },
+      {
+        "question": "Generate descriptive statistics for numerical columns. Use the 'describe' method.",
+        "answer": "result = data.describe()"
+      },
+      {
+        "question": "Fill any missing values in the 'light_level' column with 0. Use the 'fillna' method.",
+        "answer": "result = data.fillna({'light_level': 0})"
+      },
+      {
+        "question": "Change the data type of the 'observation_date' column to datetime. Use the 'astype' method.",
+        "answer": "result = data.astype({'observation_date': 'datetime64[ns]'})"
+      },
+      {
+        "question": "Create a new column 'temperature_celsius' by converting 'temperature' from Fahrenheit to Celsius using the formula C = (F - 32) * 5/9. Use basic arithmetic operations.",
+        "answer": "result = data.assign(temperature_celsius=(data['temperature'] - 32) * 5/9)"
+      },
+      {
+        "question": "Rename the column 'mob_type' to 'entity_type'. Use the 'rename' method.",
+        "answer": "result = data.rename(columns={'mob_type': 'entity_type'})"
+      },
+      {
+        "question": "Remove the 'humidity' column from the DataFrame. Use the 'drop' method.",
+        "answer": "result = data.drop(columns=['humidity'])"
+      },
+      {
+        "question": "Sort the DataFrame by 'temperature' in ascending order. Use the 'sort_values' method.",
+        "answer": "result = data.sort_values(by='temperature')"
+      },
+      {
+        "question": "Apply a function to 'mob_count' to classify counts greater than 5 as 'High' and others as 'Low', and create a new column 'mob_density'. Use the 'apply' method.",
+        "answer": "result = data.assign(mob_density=data['mob_count'].apply(lambda x: 'High' if x > 5 else 'Low'))"
+      },
+      {
+        "question": "Select rows where 'biome' is 'Forest'. Use the 'loc' indexer.",
+        "answer": "result = data.loc[data['biome'] == 'Forest']"
+      },
+      {
+        "question": "Select the first three rows and first two columns of the DataFrame. Use the 'iloc' indexer.",
+        "answer": "result = data.iloc[:3, :2]"
+      },
+      {
+        "question": "Select rows where 'light_level' is greater than 5. Use conditional selection.",
+        "answer": "result = data[data['light_level'] > 5]"
+      },
+      {
+        "question": "Group the DataFrame by 'mob_type' and calculate the sum of 'mob_count' for each group. Use the 'groupby' method.",
+        "answer": "result = data.groupby('mob_type')['mob_count'].sum().reset_index()"
+      },
+      {
+        "question": "Create a pivot table with 'biome' as index and 'mob_type' as columns, showing the mean 'temperature'. Use the 'pivot_table' method.",
+        "answer": "result = data.pivot_table(values='temperature', index='biome', columns='mob_type', aggfunc='mean')"
+      },
+      {
+        "question": "Perform aggregate operations to find the mean 'temperature' and the sum of 'mob_count'. Use the 'agg' method.",
+        "answer": "result = data.agg({'temperature': 'mean', 'mob_count': 'sum'})"
+      },
+      {
+        "question": "Generate descriptive statistics for all columns, including non-numeric ones. Use the 'describe' method with the 'include' parameter.",
+        "answer": "result = data.describe(include='all')"
+      },
+      {
+        "question": "Reset the index of the DataFrame after sorting it by 'humidity' in descending order. Use the 'sort_values' and 'reset_index' methods.",
+        "answer": "result = data.sort_values(by='humidity', ascending=False).reset_index(drop=True)"
+      }
+    ]
+    """
+
+    # Load the CSV data
+    data = CSVData(data_csv, dataframe_name='data')
+
+    # Load the quiz data
+    quiz_data = json.loads(quiz_json)
+    questions = [item['question'] for item in quiz_data]
+    answers = [item['answer'] for item in quiz_data]
+
+    # Initialize the UI and Quiz
+    ui = IpywidgetsUI()
+    quiz = Quiz(data, ui, questions, answers)
+    quiz.start()
+
+# Start the quiz
+start_pandas_quiz()
