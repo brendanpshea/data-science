@@ -234,7 +234,7 @@ class IpywidgetsUI(UIInterface):
     def render_table_schema(self, schema):
         dataframe_name, columns = schema
         schema_html = "<h3>Available DataFrame:</h3>"
-        schema_html += f"<p><code>{dataframe_name}</code> with columns:</p><ul>"
+        schema_html += f"<p> dataframe named <strong>{dataframe_name}</strong> with columns:</p><ul>"
         for _, col_name, col_type in columns:
             schema_html += f"<li><b>{col_name}</b> ({col_type})</li>"
         schema_html += "</ul>"
