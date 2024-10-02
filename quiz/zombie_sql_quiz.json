@@ -1,1 +1,245 @@
-
+[
+  {
+    "question": "Retrieve all columns from the first 5 rows of the ZombieAttacks table.",
+    "answer": "SELECT * FROM ZombieAttacks LIMIT 5;"
+  },
+  {
+    "question": "List all unique ZombieTypes in the database.",
+    "answer": "SELECT DISTINCT ZombieType FROM ZombieAttacks;"
+  },
+  {
+    "question": "Count the total number of zombie attacks recorded in the database. Name the result column 'TotalAttacks'.",
+    "answer": "SELECT COUNT(*) AS TotalAttacks FROM ZombieAttacks;"
+  },
+  {
+    "question": "Find the earliest date of a zombie attack in the database. Name the result column 'EarliestAttack'.",
+    "answer": "SELECT MIN(Date) AS EarliestAttack FROM ZombieAttacks;"
+  },
+  {
+    "question": "List all possible WeatherConditions in the database.",
+    "answer": "SELECT DISTINCT WeatherCondition FROM ZombieAttacks;"
+  },
+  {
+    "question": "Find the zombie attack with the highest VictimCount. Show the Date, Location, and VictimCount.",
+    "answer": "SELECT Date, Location, VictimCount FROM ZombieAttacks ORDER BY VictimCount DESC LIMIT 1;"
+  },
+  {
+    "question": "Calculate the average SurvivalRate across all attacks. Name the result column 'AverageSurvivalRate'.",
+    "answer": "SELECT AVG(SurvivalRate) AS AverageSurvivalRate FROM ZombieAttacks;"
+  },
+  {
+    "question": "List all attacks that occurred during a 'Full Moon'. Show the Date, Location, and ZombieType.",
+    "answer": "SELECT Date, Location, ZombieType FROM ZombieAttacks WHERE MoonPhase = 'Full Moon';"
+  },
+  {
+    "question": "Find the total number of victims across all zombie attacks. Name the result column 'TotalVictims'.",
+    "answer": "SELECT SUM(VictimCount) AS TotalVictims FROM ZombieAttacks;"
+  },
+  {
+    "question": "List all unique Locations where zombie attacks have occurred.",
+    "answer": "SELECT DISTINCT Location FROM ZombieAttacks;"
+  },
+  {
+    "question": "Find the average TemperatureCelsius of all attacks. Round to 2 decimal places and name the result column 'AvgTemperature'.",
+    "answer": "SELECT ROUND(AVG(TemperatureCelsius), 2) AS AvgTemperature FROM ZombieAttacks;"
+  },
+  {
+    "question": "Count the number of attacks for each ZombieType. Show the ZombieType and the count (name it 'AttackCount').",
+    "answer": "SELECT ZombieType, COUNT(*) AS AttackCount FROM ZombieAttacks GROUP BY ZombieType;"
+  },
+  {
+    "question": "Find the zombie attack with the lowest SurvivalRate. Show the Date, Location, and SurvivalRate.",
+    "answer": "SELECT Date, Location, SurvivalRate FROM ZombieAttacks ORDER BY SurvivalRate ASC LIMIT 1;"
+  },
+  {
+    "question": "List all attacks where the VictimCount is greater than 50. Show the Date, Location, and VictimCount.",
+    "answer": "SELECT Date, Location, VictimCount FROM ZombieAttacks WHERE VictimCount > 50;"
+  },
+  {
+    "question": "Calculate the average WindSpeedKmh for each WeatherCondition. Show the WeatherCondition and average wind speed (name it 'AvgWindSpeed').",
+    "answer": "SELECT WeatherCondition, AVG(WindSpeedKmh) AS AvgWindSpeed FROM ZombieAttacks GROUP BY WeatherCondition;"
+  },
+  {
+    "question": "Find the total number of attacks for each Month. Show the Month and the count (name it 'AttackCount').",
+    "answer": "SELECT Month, COUNT(*) AS AttackCount FROM ZombieAttacks GROUP BY Month ORDER BY Month;"
+  },
+  {
+    "question": "List all attacks where the EmergencyResponseTime was less than 5 minutes. Show the Date, Location, and EmergencyResponseTime.",
+    "answer": "SELECT Date, Location, EmergencyResponseTime FROM ZombieAttacks WHERE EmergencyResponseTime < 5;"
+  },
+  {
+    "question": "Calculate the average PopulationDensity for each Location. Show the Location and average density (name it 'AvgPopulationDensity').",
+    "answer": "SELECT Location, AVG(PopulationDensity) AS AvgPopulationDensity FROM ZombieAttacks GROUP BY Location;"
+  },
+  {
+    "question": "Find the zombie attack with the highest HumidityPercent. Show the Date, Location, and HumidityPercent.",
+    "answer": "SELECT Date, Location, HumidityPercent FROM ZombieAttacks ORDER BY HumidityPercent DESC LIMIT 1;"
+  },
+  {
+    "question": "List all attacks that occurred in 'Foggy' weather with a temperature below 10°C. Show the Date, Location, and TemperatureCelsius.",
+    "answer": "SELECT Date, Location, TemperatureCelsius FROM ZombieAttacks WHERE WeatherCondition = 'Foggy' AND TemperatureCelsius < 10;"
+  },
+    {
+    "question": "Find all zombie attacks where the Location contains the word 'City'. Show the Date and Location.",
+    "answer": "SELECT Date, Location FROM ZombieAttacks WHERE Location LIKE '%City%';"
+  },
+  {
+    "question": "List all attacks where the ZombieType starts with the letter 'C'. Display the Date, Location, and ZombieType.",
+    "answer": "SELECT Date, Location, ZombieType FROM ZombieAttacks WHERE ZombieType LIKE 'C%';"
+  },
+  {
+    "question": "Find attacks where the WeatherCondition ends with 'y'. Show the Date, Location, and WeatherCondition.",
+    "answer": "SELECT Date, Location, WeatherCondition FROM ZombieAttacks WHERE WeatherCondition LIKE '%y';"
+  },
+  {
+    "question": "Calculate the survival count for each attack. Show the Date, Location, VictimCount, SurvivalRate, and a new column 'SurvivorCount' (which is VictimCount * SurvivalRate rounded to the nearest whole number).",
+    "answer": "SELECT Date, Location, VictimCount, SurvivalRate, ROUND(VictimCount * SurvivalRate) AS SurvivorCount FROM ZombieAttacks;"
+  },
+  {
+    "question": "Convert the WindSpeedKmh to miles per hour (1 km/h = 0.621371 mph). Show the Date, Location, original WindSpeedKmh, and the new column 'WindSpeedMph' rounded to 2 decimal places.",
+    "answer": "SELECT Date, Location, WindSpeedKmh, ROUND(WindSpeedKmh * 0.621371, 2) AS WindSpeedMph FROM ZombieAttacks;"
+  },
+  {
+    "question": "Calculate the fatality rate for each attack (1 - SurvivalRate). Show the Date, Location, SurvivalRate, and the new column 'FatalityRate' as a percentage rounded to 2 decimal places.",
+    "answer": "SELECT Date, Location, SurvivalRate, ROUND((1 - SurvivalRate) * 100, 2) AS FatalityRate FROM ZombieAttacks;"
+  },
+  {
+    "question": "Find attacks where the EmergencyResponseTime was faster than the average. Show the Date, Location, and EmergencyResponseTime.",
+    "answer": "SELECT Date, Location, EmergencyResponseTime FROM ZombieAttacks WHERE EmergencyResponseTime < (SELECT AVG(EmergencyResponseTime) FROM ZombieAttacks);"
+  },
+  {
+    "question": "List the attacks that had a higher VictimCount than the average. Display the Date, Location, and VictimCount.",
+    "answer": "SELECT Date, Location, VictimCount FROM ZombieAttacks WHERE VictimCount > (SELECT AVG(VictimCount) FROM ZombieAttacks);"
+  },
+  {
+    "question": "Find the attacks that occurred on the day with the highest total VictimCount. Show the Date, Location, and VictimCount.",
+    "answer": "SELECT Date, Location, VictimCount FROM ZombieAttacks WHERE Date = (SELECT Date FROM ZombieAttacks GROUP BY Date ORDER BY SUM(VictimCount) DESC LIMIT 1);"
+  },
+  {
+    "question": "Calculate the difference between each attack's VictimCount and the average VictimCount. Show the Date, Location, VictimCount, and the new column 'VictimCountDiff'.",
+    "answer": "SELECT Date, Location, VictimCount, VictimCount - (SELECT AVG(VictimCount) FROM ZombieAttacks) AS VictimCountDiff FROM ZombieAttacks;"
+  },
+  {
+    "question": "Find attacks where the TemperatureCelsius was below the average temperature for their respective WeatherCondition. Show the Date, Location, WeatherCondition, and TemperatureCelsius.",
+    "answer": "SELECT Date, Location, WeatherCondition, TemperatureCelsius FROM ZombieAttacks za WHERE TemperatureCelsius < (SELECT AVG(TemperatureCelsius) FROM ZombieAttacks WHERE WeatherCondition = za.WeatherCondition);"
+  },
+  {
+    "question": "List all zombie types along with their average VictimCount, but only include zombie types that have an average VictimCount higher than the overall average. Show the ZombieType and AverageVictimCount.",
+    "answer": "SELECT ZombieType, AVG(VictimCount) AS AverageVictimCount FROM ZombieAttacks GROUP BY ZombieType HAVING AverageVictimCount > (SELECT AVG(VictimCount) FROM ZombieAttacks);"
+  },
+  {
+    "question": "Find the attacks that had the highest VictimCount for each ZombieType. Show the ZombieType, Date, Location, and VictimCount.",
+    "answer": "SELECT ZombieType, Date, Location, VictimCount FROM ZombieAttacks za WHERE VictimCount = (SELECT MAX(VictimCount) FROM ZombieAttacks WHERE ZombieType = za.ZombieType);"
+  },
+  {
+    "question": "Calculate the percentage of total victims for each attack. Show the Date, Location, VictimCount, and the new column 'PercentOfTotal' rounded to 2 decimal places.",
+    "answer": "SELECT Date, Location, VictimCount, ROUND(CAST(VictimCount AS FLOAT) / (SELECT SUM(VictimCount) FROM ZombieAttacks) * 100, 2) AS PercentOfTotal FROM ZombieAttacks;"
+  },
+  {
+    "question": "Categorize the zombie attacks based on VictimCount. Use CASE to create a new column 'AttackSeverity' with the following rules: 0-10 victims: 'Low', 11-50 victims: 'Medium', 51+ victims: 'High'. Show Date, Location, VictimCount, and AttackSeverity.",
+    "answer": "SELECT Date, Location, VictimCount,
+    CASE
+        WHEN VictimCount BETWEEN 0 AND 10 THEN 'Low'
+        WHEN VictimCount BETWEEN 11 AND 50 THEN 'Medium'
+        ELSE 'High'
+    END AS AttackSeverity
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Create a query that displays the MoonPhase as either 'Bright' or 'Dark'. Use CASE to categorize 'Full Moon' and 'Waxing Gibbous' as 'Bright', and all other phases as 'Dark'. Show Date, Location, original MoonPhase, and the new 'MoonBrightness' column.",
+    "answer": "SELECT Date, Location, MoonPhase,
+    CASE
+        WHEN MoonPhase IN ('Full Moon', 'Waxing Gibbous') THEN 'Bright'
+        ELSE 'Dark'
+    END AS MoonBrightness
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Classify the temperature into 'Cold', 'Mild', or 'Hot' using CASE. Consider temperatures below 10°C as 'Cold', between 10°C and 25°C as 'Mild', and above 25°C as 'Hot'. Display Date, Location, TemperatureCelsius, and the new 'TemperatureCategory' column.",
+    "answer": "SELECT Date, Location, TemperatureCelsius,
+    CASE
+        WHEN TemperatureCelsius < 10 THEN 'Cold'
+        WHEN TemperatureCelsius BETWEEN 10 AND 25 THEN 'Mild'
+        ELSE 'Hot'
+    END AS TemperatureCategory
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Create a query that displays whether the EmergencyResponseTime was 'Fast' (below average) or 'Slow' (above average). Use a subquery within the CASE statement to calculate the average. Show Date, Location, EmergencyResponseTime, and the new 'ResponseSpeed' column.",
+    "answer": "SELECT Date, Location, EmergencyResponseTime,
+    CASE
+        WHEN EmergencyResponseTime < (SELECT AVG(EmergencyResponseTime) FROM ZombieAttacks) THEN 'Fast'
+        ELSE 'Slow'
+    END AS ResponseSpeed
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Some future attacks might have NULL values for VictimCount. Write a query using COALESCE to display the VictimCount, but replace any NULL values with the average VictimCount (rounded to the nearest integer). Show Date, Location, original VictimCount, and the new 'AdjustedVictimCount' column.",
+    "answer": "SELECT Date, Location, VictimCount,
+    COALESCE(VictimCount, ROUND((SELECT AVG(VictimCount) FROM ZombieAttacks))) AS AdjustedVictimCount
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Create a query that combines the Location and ZombieType into a single 'AttackDescription' column. If ZombieType is NULL, use 'Unknown' instead. Show Date, and the new AttackDescription column.",
+    "answer": "SELECT Date,
+    Location || ' - ' || COALESCE(ZombieType, 'Unknown') AS AttackDescription
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Write a query that categorizes attacks based on both VictimCount and SurvivalRate. Use nested CASE statements to create a 'Threat Level' column: 'Critical' if VictimCount > 50 and SurvivalRate < 0.5, 'High' if VictimCount > 50 or SurvivalRate < 0.5, and 'Moderate' otherwise. Show Date, Location, VictimCount, SurvivalRate, and ThreatLevel.",
+    "answer": "SELECT Date, Location, VictimCount, SurvivalRate,
+    CASE
+        WHEN VictimCount > 50 THEN
+            CASE
+                WHEN SurvivalRate < 0.5 THEN 'Critical'
+                ELSE 'High'
+            END
+        WHEN SurvivalRate < 0.5 THEN 'High'
+        ELSE 'Moderate'
+    END AS ThreatLevel
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Some weather sensors might malfunction, resulting in NULL values for TemperatureCelsius or HumidityPercent. Create a query that uses COALESCE to fill in missing values with the average for that WeatherCondition. Show Date, WeatherCondition, original TemperatureCelsius and HumidityPercent, and the new 'AdjustedTemperature' and 'AdjustedHumidity' columns.",
+    "answer": "SELECT Date, WeatherCondition, TemperatureCelsius, HumidityPercent,
+    COALESCE(TemperatureCelsius,
+        (SELECT AVG(TemperatureCelsius) FROM ZombieAttacks z2 WHERE z2.WeatherCondition = ZombieAttacks.WeatherCondition)
+    ) AS AdjustedTemperature,
+    COALESCE(HumidityPercent,
+        (SELECT AVG(HumidityPercent) FROM ZombieAttacks z2 WHERE z2.WeatherCondition = ZombieAttacks.WeatherCondition)
+    ) AS AdjustedHumidity
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Create a query that generates a textual summary of each attack using a combination of CASE statements and string concatenation. Include severity based on VictimCount, moon brightness, and temperature category. Show Date and the new 'AttackSummary' column.",
+    "answer": "SELECT Date,
+    'Attack in ' || Location || ' - ' ||
+    CASE
+        WHEN VictimCount BETWEEN 0 AND 10 THEN 'Low severity'
+        WHEN VictimCount BETWEEN 11 AND 50 THEN 'Medium severity'
+        ELSE 'High severity'
+    END || ', ' ||
+    CASE
+        WHEN MoonPhase IN ('Full Moon', 'Waxing Gibbous') THEN 'bright moon'
+        ELSE 'dark moon'
+    END || ', ' ||
+    CASE
+        WHEN TemperatureCelsius < 10 THEN 'cold weather'
+        WHEN TemperatureCelsius BETWEEN 10 AND 25 THEN 'mild weather'
+        ELSE 'hot weather'
+    END AS AttackSummary
+FROM ZombieAttacks;"
+  },
+  {
+    "question": "Write a query that calculates the percentage difference of each attack's VictimCount from the average VictimCount for its ZombieType. Use COALESCE to handle potential division by zero. Show Date, Location, ZombieType, VictimCount, and the new 'PercentDifferenceFromAvg' column (rounded to 2 decimal places).",
+    "answer": "SELECT Date, Location, ZombieType, VictimCount,
+    ROUND(
+        COALESCE(
+            (VictimCount - AVG(VictimCount) OVER (PARTITION BY ZombieType)) / NULLIF(AVG(VictimCount) OVER (PARTITION BY ZombieType), 0) * 100,
+            0
+        ),
+        2
+    ) AS PercentDifferenceFromAvg
+FROM ZombieAttacks;"
+  }
+]
